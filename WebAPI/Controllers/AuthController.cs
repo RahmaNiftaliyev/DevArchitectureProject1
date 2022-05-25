@@ -55,7 +55,9 @@ namespace WebAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IDataResult<AccessToken>))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized, Type = typeof(string))]
         [HttpPost("RefreshToken")]
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member 'AuthController.LoginWithRefreshToken(LoginWithRefreshTokenQuery)'
         public async Task<IActionResult> LoginWithRefreshToken([FromBody] LoginWithRefreshTokenQuery command)
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member 'AuthController.LoginWithRefreshToken(LoginWithRefreshTokenQuery)'
         {
             var result = await Mediator.Send(command);
             return result.Success ? Ok(result) : BadRequest(result);

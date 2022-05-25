@@ -17,10 +17,18 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
+#pragma warning disable CS0246 // The type or namespace name 'CreateUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
 using static CreateUserGroupCommand;
+#pragma warning restore CS0246 // The type or namespace name 'CreateUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'DeleteUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
 using static DeleteUserGroupCommand;
+#pragma warning restore CS0246 // The type or namespace name 'DeleteUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'GetUserGroupsQuery' could not be found (are you missing a using directive or an assembly reference?)
 using static GetUserGroupsQuery;
+#pragma warning restore CS0246 // The type or namespace name 'GetUserGroupsQuery' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'UpdateUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
 using static UpdateUserGroupCommand;
+#pragma warning restore CS0246 // The type or namespace name 'UpdateUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
 
 namespace Tests.Business.Handlers
 {
@@ -29,10 +37,18 @@ namespace Tests.Business.Handlers
     {
         private Mock<IUserGroupRepository> _userGroupRepository;
 
+#pragma warning disable CS0246 // The type or namespace name 'GetUserGroupsQueryHandler' could not be found (are you missing a using directive or an assembly reference?)
         private GetUserGroupsQueryHandler _getUserGroupsQueryHandler;
+#pragma warning restore CS0246 // The type or namespace name 'GetUserGroupsQueryHandler' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'CreateUserGroupCommandHandler' could not be found (are you missing a using directive or an assembly reference?)
         private CreateUserGroupCommandHandler _createUserGroupCommandHandler;
+#pragma warning restore CS0246 // The type or namespace name 'CreateUserGroupCommandHandler' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'UpdateUserGroupCommandHandler' could not be found (are you missing a using directive or an assembly reference?)
         private UpdateUserGroupCommandHandler _updateUserGroupCommandHandler;
+#pragma warning restore CS0246 // The type or namespace name 'UpdateUserGroupCommandHandler' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'DeleteUserGroupCommandHandler' could not be found (are you missing a using directive or an assembly reference?)
         private DeleteUserGroupCommandHandler _deleteUserGroupCommandHandler;
+#pragma warning restore CS0246 // The type or namespace name 'DeleteUserGroupCommandHandler' could not be found (are you missing a using directive or an assembly reference?)
 
         [SetUp]
         public void Setup()

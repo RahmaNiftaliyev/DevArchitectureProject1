@@ -24,25 +24,33 @@ namespace WebAPI.Controllers
         protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
 
         [ApiExplorerSettings(IgnoreApi = true)]
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member 'BaseApiController.GetResponse<T>(IDataResult<T>)'
         public IActionResult GetResponse<T>(IDataResult<T> result)
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member 'BaseApiController.GetResponse<T>(IDataResult<T>)'
         {
             return result.Success ? Ok(result) : BadRequest(result);
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member 'BaseApiController.GetResponseOnlyResult(IResult)'
         public IActionResult GetResponseOnlyResult(IResult result)
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member 'BaseApiController.GetResponseOnlyResult(IResult)'
         {
             return result.Success ? Ok(result) : BadRequest(result);
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member 'BaseApiController.GetResponseOnlyResultMessage(IResult)'
         public IActionResult GetResponseOnlyResultMessage(IResult result)
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member 'BaseApiController.GetResponseOnlyResultMessage(IResult)'
         {
             return result.Success ? Ok(result.Message) : BadRequest(result.Message);
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member 'BaseApiController.GetResponseOnlyResultData<T>(IDataResult<T>)'
         public IActionResult GetResponseOnlyResultData<T>(IDataResult<T> result)
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member 'BaseApiController.GetResponseOnlyResultData<T>(IDataResult<T>)'
         {
             return result.Success ? Ok(result.Data) : BadRequest(result.Message);
         }

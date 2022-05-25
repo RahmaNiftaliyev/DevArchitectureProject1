@@ -15,7 +15,9 @@ namespace Core.Aspects.Autofac.Transaction
     /// </summary>
     public class TransactionScopeAspectAsync : MethodInterception
     {
+#pragma warning disable CS0649 // Field 'TransactionScopeAspectAsync._dbContextType' is never assigned to, and will always have its default value null
         private readonly Type _dbContextType;
+#pragma warning restore CS0649 // Field 'TransactionScopeAspectAsync._dbContextType' is never assigned to, and will always have its default value null
 
         public TransactionScopeAspectAsync()
         {

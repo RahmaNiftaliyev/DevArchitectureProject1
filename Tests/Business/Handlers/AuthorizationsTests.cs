@@ -26,10 +26,18 @@ using System.Threading.Tasks;
 
 using Tests.Helpers;
 
+#pragma warning disable CS0246 // The type or namespace name 'ForgotPasswordCommand' could not be found (are you missing a using directive or an assembly reference?)
 using static ForgotPasswordCommand;
+#pragma warning restore CS0246 // The type or namespace name 'ForgotPasswordCommand' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'LoginUserQuery' could not be found (are you missing a using directive or an assembly reference?)
 using static LoginUserQuery;
+#pragma warning restore CS0246 // The type or namespace name 'LoginUserQuery' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'LoginWithRefreshTokenQuery' could not be found (are you missing a using directive or an assembly reference?)
 using static LoginWithRefreshTokenQuery;
+#pragma warning restore CS0246 // The type or namespace name 'LoginWithRefreshTokenQuery' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'RegisterUserCommand' could not be found (are you missing a using directive or an assembly reference?)
 using static RegisterUserCommand;
+#pragma warning restore CS0246 // The type or namespace name 'RegisterUserCommand' could not be found (are you missing a using directive or an assembly reference?)
 
 namespace Tests.Business.Handlers
 {
@@ -41,11 +49,17 @@ namespace Tests.Business.Handlers
         private Mock<IMediator> _mediator;
         private Mock<ICacheManager> _cacheManager;
 
+#pragma warning disable CS0246 // The type or namespace name 'LoginUserQueryHandler' could not be found (are you missing a using directive or an assembly reference?)
         private LoginUserQueryHandler _loginUserQueryHandler;
+#pragma warning restore CS0246 // The type or namespace name 'LoginUserQueryHandler' could not be found (are you missing a using directive or an assembly reference?)
         private LoginUserQuery _loginUserQuery;
+#pragma warning disable CS0246 // The type or namespace name 'RegisterUserCommandHandler' could not be found (are you missing a using directive or an assembly reference?)
         private RegisterUserCommandHandler _registerUserCommandHandler;
+#pragma warning restore CS0246 // The type or namespace name 'RegisterUserCommandHandler' could not be found (are you missing a using directive or an assembly reference?)
         private RegisterUserCommand _command;
+#pragma warning disable CS0246 // The type or namespace name 'ForgotPasswordCommandHandler' could not be found (are you missing a using directive or an assembly reference?)
         private ForgotPasswordCommandHandler _forgotPasswordCommandHandler;
+#pragma warning restore CS0246 // The type or namespace name 'ForgotPasswordCommandHandler' could not be found (are you missing a using directive or an assembly reference?)
         private ForgotPasswordCommand _forgotPasswordCommand;
 
         [SetUp]

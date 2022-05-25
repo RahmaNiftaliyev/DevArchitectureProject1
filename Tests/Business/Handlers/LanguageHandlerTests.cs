@@ -21,11 +21,21 @@ using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
 
+#pragma warning disable CS0246 // The type or namespace name 'CreateLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
 using static CreateLanguageCommand;
+#pragma warning restore CS0246 // The type or namespace name 'CreateLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'DeleteLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
 using static DeleteLanguageCommand;
+#pragma warning restore CS0246 // The type or namespace name 'DeleteLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'GetLanguageQuery' could not be found (are you missing a using directive or an assembly reference?)
 using static GetLanguageQuery;
+#pragma warning restore CS0246 // The type or namespace name 'GetLanguageQuery' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'GetLanguagesQuery' could not be found (are you missing a using directive or an assembly reference?)
 using static GetLanguagesQuery;
+#pragma warning restore CS0246 // The type or namespace name 'GetLanguagesQuery' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'UpdateLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
 using static UpdateLanguageCommand;
+#pragma warning restore CS0246 // The type or namespace name 'UpdateLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
 
 namespace Tests.Business.Handlers
 {
