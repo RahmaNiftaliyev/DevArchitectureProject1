@@ -2,7 +2,6 @@ using Autofac;
 
 using Business.Constants;
 using Business.DependencyResolvers;
-using Business.Fakes.DArch;
 using Business.Services.Authentication;
 
 using Core.CrossCuttingConcerns.Caching;
@@ -110,7 +109,7 @@ namespace Business
             services.AddTransient<IGroupClaimRepository, GroupClaimRepository>();
             services.AddTransient<IUserGroupRepository, UserGroupRepository>();
 
-            services.AddDbContext<ProjectDbContext, DArchInMemory>(ServiceLifetime.Transient);
+            services.AddDbContext<ProjectDbContext, MsDbContext>();
             services.AddSingleton<MongoDbContextBase, MongoDbContext>();
         }
 
@@ -131,7 +130,7 @@ namespace Business
             services.AddTransient<IGroupRepository, GroupRepository>();
             services.AddTransient<IGroupClaimRepository, GroupClaimRepository>();
             services.AddTransient<IUserGroupRepository, UserGroupRepository>();
-            services.AddDbContext<ProjectDbContext>();
+            services.AddDbContext<MsDbContext>();
 
             services.AddSingleton<MongoDbContextBase, MongoDbContext>();
         }
@@ -154,7 +153,7 @@ namespace Business
             services.AddTransient<IGroupClaimRepository, GroupClaimRepository>();
 
 
-            services.AddDbContext<ProjectDbContext>();
+            services.AddDbContext<ProjectDbContext, MsDbContext>();
 
             services.AddSingleton<MongoDbContextBase, MongoDbContext>();
         }
