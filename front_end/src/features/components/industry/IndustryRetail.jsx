@@ -3,7 +3,7 @@ import React from "react";
 import IndustryHeaderDash from "./IndustryHeaderDash";
 import RoundedButton from "../../toolbox/buttons/RoundedButton";
 import Footer from "./../../footer/Footer";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import styles from "./industry.module.css";
 // !----------------------------------------------------------
 import headerImagePng from "./assets/img/retail-header.png";
@@ -11,7 +11,6 @@ import sectionImagePng from "./assets/img/retail-section.png";
 import groupItemImagePng1 from "./assets/img/retail-group-item-1.png";
 import groupItemImagePng2 from "./assets/img/retail-group-item-2.png";
 import groupItemImagePng3 from "./assets/img/retail-group-item-3.png";
-import footerImage from "./assets/img/retail-footer.png";
 
 const IndustryRetail = () => {
     return (

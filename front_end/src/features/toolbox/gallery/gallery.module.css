@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.our_team__top>p {
+.our_team__top > p {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 4px;
@@ -25,7 +25,7 @@
     align-items: center;
 }
 
-.our_team__top>h2 {
+.our_team__top > h2 {
     font-size: 42px;
     font-style: normal;
     font-weight: 400;
@@ -60,19 +60,19 @@
     width: 70%;
 }
 
-.position_protecter>h2 {
+.position_protecter > h2 {
     color: #171717;
     font-size: 60px;
     font-weight: 300;
 }
 
-.position_protecter>h3 {
+.position_protecter > h3 {
     color: #aaa;
     font-size: 25px;
     font-weight: 300;
 }
 
-.position_protecter>p {
+.position_protecter > p {
     color: #5e5e5e;
     font-style: italic;
     margin-top: 20px;
@@ -99,7 +99,6 @@ img[alt="think-wise-service"] {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(227, 142, 142, 0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(227, 142, 142, 0.75);
 }
-
 
 
 .main_container_team_bottom {
@@ -157,12 +156,12 @@ img[alt="think-wise-service"] {
         margin-top: 41px;
     }
 
-    .our_team__top>p {
+    .our_team__top > p {
         font-size: 16px;
         line-height: 16px;
     }
 
-    .our_team__top>h2 {
+    .our_team__top > h2 {
         font-size: 24px;
         line-height: 26px;
     }
@@ -180,7 +179,7 @@ img[alt="think-wise-service"] {
         width: 100%;
     }
 
-    .img_item_img>img {
+    .img_item_img > img {
         width: 100%;
         /* background-color: green; */
     }
@@ -198,21 +197,21 @@ img[alt="think-wise-service"] {
         /* background-color: black; */
     }
 
-    .position_protecter>h2 {
+    .position_protecter > h2 {
         color: #171717;
         font-size: 14px;
         font-weight: 300;
         line-height: 16px;
     }
 
-    .position_protecter>h3 {
+    .position_protecter > h3 {
         color: #aaa;
         font-size: 16px;
         font-weight: 300;
         line-height: 16px;
     }
 
-    .position_protecter>p {
+    .position_protecter > p {
         color: #5e5e5e;
         font-size: 12px;
         font-style: italic;
@@ -238,5 +237,5 @@ img[alt="think-wise-service"] {
 
 
 .prefissional_team_header {
-    color:white!important;
+    color: white !important;
 }

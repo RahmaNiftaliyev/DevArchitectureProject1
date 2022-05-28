@@ -1,9 +1,9 @@
 // @ts-nocheck
-import { createSlice, createEntityAdapter, createAsyncThunk } from "@reduxjs/toolkit";
+import {createAsyncThunk, createEntityAdapter, createSlice} from "@reduxjs/toolkit";
 
 const EmployeeAdapter = createEntityAdapter({
-    selectId: ( Employee ) => Employee.id,
-    sortComparer: ( preEmployee, nextEmployee ) => preEmployee.id.localeCompare(nextEmployee.id)
+    selectId: (Employee) => Employee.id,
+    sortComparer: (preEmployee, nextEmployee) => preEmployee.id.localeCompare(nextEmployee.id)
 });
 
 const initialState = {
@@ -28,7 +28,7 @@ export const fetchEmployees = createAsyncThunk("Employees/fetchEmployees",
     });
 
 export const fetchEmployeeById = createAsyncThunk("Employees/fetchEmployeeById",
-    async ( id ) => {
+    async (id) => {
         try {
             const response = await fetch(`/api/Employee/getbyid${id}`);
             return await response.json();
@@ -38,7 +38,7 @@ export const fetchEmployeeById = createAsyncThunk("Employees/fetchEmployeeById",
     });
 
 export const AddEmployee = createAsyncThunk("Employees/addEmployee",
-    async ( Employee ) => {
+    async (Employee) => {
         try {
             const addedEmployee = await fetch("/api/Employee/add",
                 {
@@ -55,7 +55,7 @@ export const AddEmployee = createAsyncThunk("Employees/addEmployee",
     });
 
 export const updateEmployeePassword = createAsyncThunk("Employees/updateEmployeePassword",
-    async ( Employee ) => {
+    async (Employee) => {
         try {
             const updatedEmployee = await fetch(`/api/Employee/update${Employee.id}`,
                 {
@@ -72,7 +72,7 @@ export const updateEmployeePassword = createAsyncThunk("Employees/updateEmployee
     });
 
 export const deleteEmployee = createAsyncThunk("Employees/deleteEmployee",
-    async ( id ) => {
+    async (id) => {
         try {
             const response = await fetch(`/api/Employee/delete${id}`,
                 {
@@ -89,69 +89,69 @@ const sliceInvoker = () => {
         name: "Employees",
         initialState,
         reducers: {
-            setChecked: ( state, action ) => {
+            setChecked: (state, action) => {
                 state.checked = action.payload;
             }, // setChecked
-            setSelectedEmployee: ( state, action ) => {
+            setSelectedEmployee: (state, action) => {
                 state.selectedEmployee = action.payload;
             }, // setSelectedEmployee
-            setStatus: ( state, action ) => {
+            setStatus: (state, action) => {
                 state.status = action.payload;
             }, // setStatus
         },
         extraReducers: {
-            [ fetchEmployees.pending ]: ( state, action ) => {
+            [fetchEmployees.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ fetchEmployees.fulfilled ]: ( state, action ) => {
+            [fetchEmployees.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 EmployeeAdapter.setAll(state, action.payload);
             },
-            [ fetchEmployees.rejected ]: ( state, action ) => {
+            [fetchEmployees.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ fetchEmployeeById.pending ]: ( state, action ) => {
+            [fetchEmployeeById.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ fetchEmployeeById.fulfilled ]: ( state, action ) => {
+            [fetchEmployeeById.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 state.selectedEmployee = action.payload;
             },
-            [ fetchEmployeeById.rejected ]: ( state, action ) => {
+            [fetchEmployeeById.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ AddEmployee.pending ]: ( state, action ) => {
+            [AddEmployee.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ AddEmployee.fulfilled ]: ( state, action ) => {
+            [AddEmployee.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 EmployeeAdapter.addOne(state, action.payload);
             },
-            [ AddEmployee.rejected ]: ( state, action ) => {
+            [AddEmployee.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ updateEmployeePassword.pending ]: ( state, action ) => {
+            [updateEmployeePassword.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ updateEmployeePassword.fulfilled ]: ( state, action ) => {
+            [updateEmployeePassword.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 state.selectedEmployee = action.payload;
             },
-            [ updateEmployeePassword.rejected ]: ( state, action ) => {
+            [updateEmployeePassword.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ deleteEmployee.pending ]: ( state, action ) => {
+            [deleteEmployee.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ deleteEmployee.fulfilled ]: ( state, action ) => {
+            [deleteEmployee.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 EmployeeAdapter.removeOne(state, action.payload);
             },
-            [ deleteEmployee.rejected ]: ( state, action ) => {
+            [deleteEmployee.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             }

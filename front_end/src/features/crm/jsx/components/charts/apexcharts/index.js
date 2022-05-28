@@ -1,7 +1,7 @@
 import React from "react";
 import loadable from "@loadable/component";
 // import { Link } from 'react-router-dom';
-import { Row, Col, Card } from "react-bootstrap";
+import {Card, Col, Row} from "react-bootstrap";
 
 import pMinDelay from "p-min-delay";
 
@@ -17,94 +17,94 @@ const ApexPie = loadable(() => pMinDelay(import("./Pie4"), 1000));
 const ApexPie5 = loadable(() => pMinDelay(import("./Pie5"), 1000));
 
 function ApexChart() {
-   return (
-      <div className="h-80">
-         <PageTitle motherMenu="Charts" activeMenu="ApexChart" />
-         <Row>
-            <Col xl={6}>
-               <Card>
-                  <Card.Header>
-                     <Card.Title>Bar Chart</Card.Title>
-                  </Card.Header>
-                  <Card.Body>
-                     <ApexBar2 />
-                  </Card.Body>
-               </Card>
-            </Col>
-            <Col xl={6}>
-               <Card>
-                  <Card.Header>
-                     <Card.Title>Bar Chart</Card.Title>
-                  </Card.Header>
-                  <Card.Body>
-                     <ApexBar3 />
-                  </Card.Body>
-               </Card>
-            </Col>
+    return (
+        <div className="h-80">
+            <PageTitle motherMenu="Charts" activeMenu="ApexChart"/>
+            <Row>
+                <Col xl={6}>
+                    <Card>
+                        <Card.Header>
+                            <Card.Title>Bar Chart</Card.Title>
+                        </Card.Header>
+                        <Card.Body>
+                            <ApexBar2/>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xl={6}>
+                    <Card>
+                        <Card.Header>
+                            <Card.Title>Bar Chart</Card.Title>
+                        </Card.Header>
+                        <Card.Body>
+                            <ApexBar3/>
+                        </Card.Body>
+                    </Card>
+                </Col>
 
-            <Col xl={6}>
-               <Card>
-                  <Card.Header>
-                     <Card.Title>Line</Card.Title>
-                  </Card.Header>
-                  <Card.Body>
-                     <ApexLine />
-                  </Card.Body>
-               </Card>
-            </Col>
-            <Col xl={6}>
-               <Card>
-                  <Card.Header>
-                     <Card.Title>Line</Card.Title>
-                  </Card.Header>
-                  <Card.Body>
-                     <ApexLine3 />
-                  </Card.Body>
-               </Card>
-            </Col>
-            <Col xl={6}>
-               <Card>
-                  <Card.Header>
-                     <Card.Title>Line</Card.Title>
-                  </Card.Header>
-                  <Card.Body>
-                     <ApexLine4 />
-                  </Card.Body>
-               </Card>
-            </Col>
-            <Col xl={6}>
-               <Card>
-                  <Card.Header>
-                     <Card.Title>Pie</Card.Title>
-                  </Card.Header>
-                  <Card.Body className="mt-5">
-                     <ApexPie />
-                  </Card.Body>
-               </Card>
-            </Col>
-            <Col xl={6}>
-               <Card>
-                  <Card.Header>
-                     <Card.Title>Pie</Card.Title>
-                  </Card.Header>
-                  <Card.Body>
-                     <ApexPie5 />
-                  </Card.Body>
-               </Card>
-            </Col>
-            <Col xl={6}>
-               <Card>
-                  <Card.Header>
-                     <Card.Title>Redial Bar</Card.Title>
-                  </Card.Header>
-                  <Card.Body>
-                     <ApexRedialBar />
-                  </Card.Body>
-               </Card>
-            </Col>
-         </Row>
-      </div>
-   );
+                <Col xl={6}>
+                    <Card>
+                        <Card.Header>
+                            <Card.Title>Line</Card.Title>
+                        </Card.Header>
+                        <Card.Body>
+                            <ApexLine/>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xl={6}>
+                    <Card>
+                        <Card.Header>
+                            <Card.Title>Line</Card.Title>
+                        </Card.Header>
+                        <Card.Body>
+                            <ApexLine3/>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xl={6}>
+                    <Card>
+                        <Card.Header>
+                            <Card.Title>Line</Card.Title>
+                        </Card.Header>
+                        <Card.Body>
+                            <ApexLine4/>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xl={6}>
+                    <Card>
+                        <Card.Header>
+                            <Card.Title>Pie</Card.Title>
+                        </Card.Header>
+                        <Card.Body className="mt-5">
+                            <ApexPie/>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xl={6}>
+                    <Card>
+                        <Card.Header>
+                            <Card.Title>Pie</Card.Title>
+                        </Card.Header>
+                        <Card.Body>
+                            <ApexPie5/>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xl={6}>
+                    <Card>
+                        <Card.Header>
+                            <Card.Title>Redial Bar</Card.Title>
+                        </Card.Header>
+                        <Card.Body>
+                            <ApexRedialBar/>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+        </div>
+    );
 }
 
 export default ApexChart;

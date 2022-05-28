@@ -1,17 +1,20 @@
 /// Menu
 import MetisMenu from 'metismenujs'
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 /// Scroll
 import PerfectScrollbar from 'react-perfect-scrollbar'
 /// Link
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 class MM extends Component {
     componentDidMount() {
         this.$el = this.el
         this.mm = new MetisMenu(this.$el)
     }
-    componentWillUnmount() {}
+
+    componentWillUnmount() {
+    }
+
     render() {
         return (
             <div className="mm-wrapper">
@@ -24,19 +27,23 @@ class MM extends Component {
 }
 
 class SideBar extends Component {
+    state = {
+        loveEmoji: false,
+    }
+
     /// Open menu
     componentDidMount() {
         // sidebar open/close
         var btn = document.querySelector('.nav-control')
         var aaa = document.querySelector('#main-wrapper')
+
         function toggleFunc() {
             return aaa.classList.toggle('menu-toggle')
         }
+
         btn.addEventListener('click', toggleFunc)
     }
-    state = {
-        loveEmoji: false,
-    }
+
     render() {
         /// Path
         let path = window.location.pathname
@@ -501,7 +508,7 @@ class SideBar extends Component {
                         </li>
                         {/* servislərimiz */}
                     </MM>
-                    <div className="copyright" style={{position: "absolute",bottom:"0"}}>
+                    <div className="copyright" style={{position: "absolute", bottom: "0"}}>
                         <p className="fs-14 font-w200">
                             <strong className="font-w400">TWC CRM</strong> ©
                             2022 All Rights Reserved

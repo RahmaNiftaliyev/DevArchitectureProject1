@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createSlice, createEntityAdapter, createAsyncThunk } from "@reduxjs/toolkit";
+import {createAsyncThunk, createEntityAdapter, createSlice} from "@reduxjs/toolkit";
 
 const orderAdapter = createEntityAdapter({
     selectId: (order) => order.id,
@@ -169,6 +169,6 @@ export const {
     selectTotal: selectTotalOrders
 } = orderAdapter.getSelectors((state) => state.Orders);
 
-export const { setChecked, setSelectedOrder, setStatus } = ordersSlice.actions;
+export const {setChecked, setSelectedOrder, setStatus} = ordersSlice.actions;
 
 export default ordersSlice.reducer;

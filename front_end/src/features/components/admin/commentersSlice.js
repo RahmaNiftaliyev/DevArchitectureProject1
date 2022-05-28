@@ -1,9 +1,9 @@
 // @ts-nocheck
-import { createSlice, createEntityAdapter, createAsyncThunk } from "@reduxjs/toolkit";
+import {createAsyncThunk, createEntityAdapter, createSlice} from "@reduxjs/toolkit";
 
 const commenterAdapter = createEntityAdapter({
-    selectId: ( commenter ) => commenter.id,
-    sortComparer: ( preCommenter, nextCommenter ) => preCommenter.id.localeCompare(nextCommenter.id)
+    selectId: (commenter) => commenter.id,
+    sortComparer: (preCommenter, nextCommenter) => preCommenter.id.localeCompare(nextCommenter.id)
 });
 
 const initialState = {
@@ -28,7 +28,7 @@ export const fetchCommenters = createAsyncThunk("commenters/fetchCommenters",
     });
 
 export const fetchCommenterById = createAsyncThunk("commenters/fetchCommenterById",
-    async ( id ) => {
+    async (id) => {
         try {
             const response = await fetch(`/api/Commenter/getbyid/${id}`);
             return await response.json();
@@ -38,7 +38,7 @@ export const fetchCommenterById = createAsyncThunk("commenters/fetchCommenterByI
     });
 
 export const addCommenter = createAsyncThunk("commenters/addCommenter",
-    async ( commenter ) => {
+    async (commenter) => {
         try {
             const addedCommenter = await fetch("/api/Commenter/add",
                 {
@@ -55,7 +55,7 @@ export const addCommenter = createAsyncThunk("commenters/addCommenter",
     });
 
 export const updateCommenterPassword = createAsyncThunk("commenters/updateCommenterPassword",
-    async ( commenter ) => {
+    async (commenter) => {
         try {
             const updatedCommenter = await fetch(`/api/Commenter/update/${commenter.id}`,
                 {
@@ -72,7 +72,7 @@ export const updateCommenterPassword = createAsyncThunk("commenters/updateCommen
     });
 
 export const deleteCommenter = createAsyncThunk("commenters/deleteCommenter",
-    async ( id ) => {
+    async (id) => {
         try {
             const response = await fetch(`/api/Commenter/delete/${id}`,
                 {
@@ -89,69 +89,69 @@ const sliceInvoker = () => {
         name: "commenters",
         initialState,
         reducers: {
-            setChecked: ( state, action ) => {
+            setChecked: (state, action) => {
                 state.checked = action.payload;
             }, // setChecked
-            setSelectedCommenter: ( state, action ) => {
+            setSelectedCommenter: (state, action) => {
                 state.selectedCommenter = action.payload;
             }, // setSelectedCommenter
-            setStatus: ( state, action ) => {
+            setStatus: (state, action) => {
                 state.status = action.payload;
             }, // setStatus
         },
         extraReducers: {
-            [ fetchCommenters.pending ]: ( state, action ) => {
+            [fetchCommenters.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ fetchCommenters.fulfilled ]: ( state, action ) => {
+            [fetchCommenters.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 commenterAdapter.setAll(state, action.payload);
             },
-            [ fetchCommenters.rejected ]: ( state, action ) => {
+            [fetchCommenters.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ fetchCommenterById.pending ]: ( state, action ) => {
+            [fetchCommenterById.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ fetchCommenterById.fulfilled ]: ( state, action ) => {
+            [fetchCommenterById.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 state.selectedCommenter = action.payload;
             },
-            [ fetchCommenterById.rejected ]: ( state, action ) => {
+            [fetchCommenterById.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ addCommenter.pending ]: ( state, action ) => {
+            [addCommenter.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ addCommenter.fulfilled ]: ( state, action ) => {
+            [addCommenter.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 commenterAdapter.addOne(state, action.payload);
             },
-            [ addCommenter.rejected ]: ( state, action ) => {
+            [addCommenter.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ updateCommenterPassword.pending ]: ( state, action ) => {
+            [updateCommenterPassword.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ updateCommenterPassword.fulfilled ]: ( state, action ) => {
+            [updateCommenterPassword.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 state.selectedCommenter = action.payload;
             },
-            [ updateCommenterPassword.rejected ]: ( state, action ) => {
+            [updateCommenterPassword.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ deleteCommenter.pending ]: ( state, action ) => {
+            [deleteCommenter.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ deleteCommenter.fulfilled ]: ( state, action ) => {
+            [deleteCommenter.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 commenterAdapter.removeOne(state, action.payload);
             },
-            [ deleteCommenter.rejected ]: ( state, action ) => {
+            [deleteCommenter.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             }

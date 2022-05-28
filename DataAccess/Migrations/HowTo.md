@@ -2,7 +2,6 @@
 $env:ASPNETCORE_ENVIRONMENT='Staging'
 $env:ASPNETCORE_ENVIRONMENT='Production'
 
-
 // PostgreSQL
 
 $env:ASPNETCORE_ENVIRONMENT='Staging'
@@ -21,7 +20,7 @@ Update-Database -context MsDbContext
 
 dotnet ef migrations add InitialCreate --context MsDbContext --output-dir Migrations/Ms
 
-// Oracle 
+// Oracle
 
 $env:ASPNETCORE_ENVIRONMENT='Staging'
 Add-Migration InitialCreate -context OracleDbContext -OutputDir Migrations/Ora
@@ -30,8 +29,7 @@ Update-Database -context OracleDbContext
 
 dotnet ef migrations add InitialCreate --context MsDbContext --output-dir Migrations/Ms
 
-
-// Mysql 
+// Mysql
 
 $env:ASPNETCORE_ENVIRONMENT='Staging'
 Add-Migration InitialCreate -context MySqlDbContext -OutputDir Migrations/Mysql
@@ -54,7 +52,7 @@ drop table public."MobileLogins";
 drop table public."Groups";
 drop table public."Users";
 
-select concat('drop table ',table_schema,'."',cast(table_name as varchar),'";') 
+select concat('drop table ',table_schema,'."',cast(table_name as varchar),'";')
 from INFORMATION_SCHEMA.TABLES
 where table_schema='public';
 */

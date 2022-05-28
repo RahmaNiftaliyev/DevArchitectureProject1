@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createSlice, createEntityAdapter, createAsyncThunk } from "@reduxjs/toolkit";
+import {createAsyncThunk, createEntityAdapter, createSlice} from "@reduxjs/toolkit";
 
 const candidateAdapter = createEntityAdapter({
     selectId: (candidate) => candidate.id,

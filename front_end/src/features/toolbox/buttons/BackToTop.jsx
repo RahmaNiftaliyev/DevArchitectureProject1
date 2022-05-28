@@ -4,7 +4,7 @@ import styles from "./button.module.css";
 // !------------------------------------------
 import svgButtonView from "./svg/button.svg";
 
-const BackToTop = ({ showMe }) => {
+const BackToTop = ({showMe}) => {
     return (
         <a
             href="#top"

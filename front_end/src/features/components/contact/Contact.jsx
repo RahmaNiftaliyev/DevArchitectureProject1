@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import styles from './contact.module.css';
 import arrow from './assets/img/arrow.png';
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 import GoogleMapApiExample from './../../toolbox/googleapis/googlemap/GoogleMapApiExample'
 
 const Contact = () => {
@@ -19,38 +18,38 @@ const Contact = () => {
         <main className="mobile-padding">
             <section className={`${styles.map_numbers}`}>
                 <div className={`${styles.map}`}>
-                        <GoogleMapApiExample />
+                    <GoogleMapApiExample/>
                 </div>
                 <div className={`${styles.number}`}>
-   
-                        <div>
-                            <span>ƏLAQƏ</span>
-                            <h2>
-                                Bizimlə əlaqə saxlayın <br />
-                                və ya ofisimizə yaxınlaşın
-                            </h2>
-                            <div className={`${styles.contact_informations}`}>
-                                <div>
-                                    <a href="mailto:info@thinkwise.az">
-                                        info@thinkwise.az
-                                    </a>{' '}
-                                    <br />
-                                    <a href="tel:+994 50 447 10 90">
-                                        +994 50 447 10 90
-                                    </a>{' '}
-                                    <br />
-                                    <a href="tel:+994 50 447 10 90">
-                                        +994 50 447 10 90
-                                    </a>
-                                </div>
 
-                                <p>
-                                    Nobel prospekti 15, <br /> Azure Biznes
-                                    Mərkəzi <br />
-                                    Mərtəbə 17, Otaq 118
-                                </p>
+                    <div>
+                        <span>ƏLAQƏ</span>
+                        <h2>
+                            Bizimlə əlaqə saxlayın <br/>
+                            və ya ofisimizə yaxınlaşın
+                        </h2>
+                        <div className={`${styles.contact_informations}`}>
+                            <div>
+                                <a href="mailto:info@thinkwise.az">
+                                    info@thinkwise.az
+                                </a>{' '}
+                                <br/>
+                                <a href="tel:+994 50 447 10 90">
+                                    +994 50 447 10 90
+                                </a>{' '}
+                                <br/>
+                                <a href="tel:+994 50 447 10 90">
+                                    +994 50 447 10 90
+                                </a>
                             </div>
+
+                            <p>
+                                Nobel prospekti 15, <br/> Azure Biznes
+                                Mərkəzi <br/>
+                                Mərtəbə 17, Otaq 118
+                            </p>
                         </div>
+                    </div>
 
                 </div>
             </section>
@@ -58,13 +57,13 @@ const Contact = () => {
                 <div className={`${styles.pic}`}></div>
                 <div className={`${styles.form}`}>
                     <form onSubmit={handleSubmit}>
-           
-                            <span>ƏLAQƏ</span>
-                            <h2>
-                                Müraciətinizi burada <br />
-                                qeyd edə bilərsiniz
-                            </h2>
-    
+
+                        <span>ƏLAQƏ</span>
+                        <h2>
+                            Müraciətinizi burada <br/>
+                            qeyd edə bilərsiniz
+                        </h2>
+
 
                         <input
                             type="text"
@@ -98,18 +97,18 @@ const Contact = () => {
                             onChange={e => setMessage(e.target.value)}
                         />
                         <button disabled={!canSubmit}>
-              
-                                <span>Müraciət et</span>
-                                <img
-                                    src={arrow}
-                                    alt="button icon arrow right"
-                                />
+
+                            <span>Müraciət et</span>
+                            <img
+                                src={arrow}
+                                alt="button icon arrow right"
+                            />
                         </button>
                     </form>
                 </div>
             </section>
             <div style={{
-                marginBottom:"135px"
+                marginBottom: "135px"
             }}></div>
         </main>
     );

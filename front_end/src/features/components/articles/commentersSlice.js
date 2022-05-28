@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createSlice, createEntityAdapter, createAsyncThunk } from "@reduxjs/toolkit";
+import {createAsyncThunk, createEntityAdapter, createSlice} from "@reduxjs/toolkit";
 
 const adapterCreator = () => {
     return {
@@ -173,6 +173,6 @@ export const {
     selectTotal: selectTotalCommenters
 } = commenterAdapter.getSelectors((state) => state.commenters);
 
-export const { setChecked, setSelectedCommenter, setStatus } = commentersSlice.actions;
+export const {setChecked, setSelectedCommenter, setStatus} = commentersSlice.actions;
 
 export default commentersSlice.reducer;

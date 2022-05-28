@@ -1,22 +1,23 @@
-import { Component } from 'react'
-import { Link, Route, Switch } from 'react-router-dom'
+import {Component} from 'react'
+import {Link, Route, Switch} from 'react-router-dom'
 import EditPost from '../../pages/EditPost/EditPost'
 import SinglePost from '../../pages/SinglePost/SinglePost'
-import { Row, Col, Card, Table } from 'react-bootstrap'
+import {Card, Col, Row, Table} from 'react-bootstrap'
 import PageTitle from '../../layouts/PageTitle'
 import swal from 'sweetalert'
-
 
 
 class Posts extends Component {
     onCreatePost() {
         this.props.createPostAction()
     }
+
     componentDidMount() {
         if (this.props.posts && !this.props.posts.length) {
             this.props.getPostsAction()
         }
     }
+
     onDeletePost(postId) {
         swal({
             title: 'Əminsən ?',
@@ -35,6 +36,7 @@ class Posts extends Component {
             }
         })
     }
+
     render() {
         const posts = []
 
@@ -51,7 +53,7 @@ class Posts extends Component {
                             <Link
                                 href="#"
                                 className="btn btn-primary shadow btn-sm sharp mr-2"
-                                to={{ pathname: `/posts/edit/${post.id}` }}
+                                to={{pathname: `/posts/edit/${post.id}`}}
                             >
                                 <i className="fa fa-pencil scale4"></i>
                             </Link>
@@ -66,7 +68,7 @@ class Posts extends Component {
                     </td>
                     <td>
                         <Link
-                            to={{ pathname: `/posts/${post.id}` }}
+                            to={{pathname: `/posts/${post.id}`}}
                             className="btn light btn-info"
                         >
                             Detalına bax
@@ -106,14 +108,14 @@ class Posts extends Component {
                                             <Card.Body>
                                                 <Table responsive>
                                                     <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Ad</th>
-                                                            <th>Soyad</th>
-                                                            <th>Təyinat</th>
-                                                            <th>Məkan</th>
-                                                            <th>Tapşırıq</th>
-                                                        </tr>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Ad</th>
+                                                        <th>Soyad</th>
+                                                        <th>Təyinat</th>
+                                                        <th>Məkan</th>
+                                                        <th>Tapşırıq</th>
+                                                    </tr>
                                                     </thead>
                                                     <tbody>{posts}</tbody>
                                                 </Table>

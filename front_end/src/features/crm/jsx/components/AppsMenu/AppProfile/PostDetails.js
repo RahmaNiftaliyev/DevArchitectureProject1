@@ -1,18 +1,10 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 
 /// Image
-import profile01 from '../../../../images/profile/1.jpg'
-import profile02 from '../../../../images/profile/2.jpg'
-import profile03 from '../../../../images/profile/3.jpg'
-import profile04 from '../../../../images/profile/4.jpg'
-import profile05 from '../../../../images/profile/5.jpg'
-import profile06 from '../../../../images/profile/6.jpg'
-import profile07 from '../../../../images/profile/7.jpg'
 import profile08 from '../../../../images/profile/8.jpg'
 import profile from '../../../../images/profile/profile.png'
-import { Dropdown, Button, Modal } from 'react-bootstrap'
-import { SRLWrapper } from 'simple-react-lightbox'
+import {Button, Dropdown, Modal} from 'react-bootstrap'
 import PageTitle from '../../../layouts/PageTitle'
 
 const PostDetails = () => {
@@ -110,19 +102,19 @@ const PostDetails = () => {
                                             </Dropdown.Toggle>
                                             <Dropdown.Menu className="dropdown-menu dropdown-menu-right">
                                                 <Dropdown.Item className="dropdown-item">
-                                                    <i className="fa fa-user-circle text-primary mr-2" />
+                                                    <i className="fa fa-user-circle text-primary mr-2"/>
                                                     Hesabı görüntülə
                                                 </Dropdown.Item>
                                                 <Dropdown.Item className="dropdown-item">
-                                                    <i className="fa fa-users text-primary mr-2" />
+                                                    <i className="fa fa-users text-primary mr-2"/>
                                                     Yaxın dostlara əlavə et
                                                 </Dropdown.Item>
                                                 <Dropdown.Item className="dropdown-item">
-                                                    <i className="fa fa-plus text-primary mr-2" />
+                                                    <i className="fa fa-plus text-primary mr-2"/>
                                                     Qrupa əlavə et
                                                 </Dropdown.Item>
                                                 <Dropdown.Item className="dropdown-item">
-                                                    <i className="fa fa-ban text-primary mr-2" />
+                                                    <i className="fa fa-ban text-primary mr-2"/>
                                                     Block
                                                 </Dropdown.Item>
                                             </Dropdown.Menu>
@@ -132,7 +124,8 @@ const PostDetails = () => {
                             </div>
                         </div>
                     </div>
-                </div>{' '}
+                </div>
+                {' '}
                 <div className="row">
                     <div className="col-xl-4">
                         <div className="row">
@@ -408,11 +401,11 @@ const PostDetails = () => {
                                             Təsisçi Çingiz İsmayılov
                                         </li>
                                         <li className="post-date mr-3">
-                                            <i className="fa fa-calender" />4
+                                            <i className="fa fa-calender"/>4
                                             Aprel 2021
                                         </li>
                                         <li className="post-comment">
-                                            <i className="fa fa-comments-o" /> 0
+                                            <i className="fa fa-comments-o"/> 0
                                         </li>
                                     </ul>
 

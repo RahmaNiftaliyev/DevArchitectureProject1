@@ -1,86 +1,83 @@
-import React, { Fragment } from "react";
+import React, {Fragment} from "react";
 import PageTitle from "../../../../layouts/PageTitle";
-import { Dropdown } from "react-bootstrap";
+import {Dropdown} from "react-bootstrap";
 
 /// images
-import avartar5 from "../../../../../images/avatar/5.png";
-import avartar1 from "../../../../../images/avatar/1.png";
-import { Link } from "react-router-dom";
 
 const Customers = () => {
-   const drop = (
-      <Dropdown>
-         <Dropdown.Toggle variant="" className="table-dropdown i-false">
-            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-               <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                  <rect x="0" y="0" width="24" height="24"></rect>
-                  <circle fill="#000000" cx="5" cy="12" r="2"></circle>
-                  <circle fill="#000000" cx="12" cy="12" r="2"></circle>
-                  <circle fill="#000000" cx="19" cy="12" r="2"></circle>
-               </g>
-            </svg>
-         </Dropdown.Toggle>
-         <Dropdown.Menu>
-            <Dropdown.Item to="#">Redaktə et</Dropdown.Item>
+    const drop = (
+        <Dropdown>
+            <Dropdown.Toggle variant="" className="table-dropdown i-false">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                    <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                        <rect x="0" y="0" width="24" height="24"></rect>
+                        <circle fill="#000000" cx="5" cy="12" r="2"></circle>
+                        <circle fill="#000000" cx="12" cy="12" r="2"></circle>
+                        <circle fill="#000000" cx="19" cy="12" r="2"></circle>
+                    </g>
+                </svg>
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+                <Dropdown.Item to="#">Redaktə et</Dropdown.Item>
 
-            <Dropdown.Item to="#" className="text-danger">
-               Sil
-            </Dropdown.Item>
-         </Dropdown.Menu>
-      </Dropdown>
-   );
+                <Dropdown.Item to="#" className="text-danger">
+                    Sil
+                </Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
+    );
 
-   const chack = (i) => (
-      <div className={`custom-control custom-checkbox ml-2   `}>
-         <input
-            type="checkbox"
-            className="custom-control-input "
-            id={`checkAll${i}`}
-            required=""
-         />
-         <label
-            className="custom-control-label"
-            htmlFor={`checkAll${i}`}
-         ></label>
-      </div>
-   );
+    const chack = (i) => (
+        <div className={`custom-control custom-checkbox ml-2   `}>
+            <input
+                type="checkbox"
+                className="custom-control-input "
+                id={`checkAll${i}`}
+                required=""
+            />
+            <label
+                className="custom-control-label"
+                htmlFor={`checkAll${i}`}
+            ></label>
+        </div>
+    );
 
-   return (
-      <Fragment>
-         <PageTitle activeMenu="Customers" motherMenu="Shop" />
-         <div className="row">
-            <div className="col-lg-12">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="table-responsive">
-                        <table className="table mb-0 table-striped">
-                           <thead>
-                              <tr>
-                                 <th className="">
-                                    <div className="custom-control custom-checkbox mx-2">
-                                       <input
-                                          type="checkbox"
-                                          className="custom-control-input"
-                                          id="checkAll"
-                                       />
-                                       <label
-                                          className="custom-control-label"
-                                          htmlFor="checkAll"
-                                       ></label>
-                                    </div>
-                                 </th>
-                                 <th>Name</th>
-                                 <th>Email</th>
-                                 <th>Phone</th>
-                                 <th className="pl-5 width200">
-                                    Billing Address
-                                 </th>
-                                 <th>Joined</th>
-                                 <th></th>
-                              </tr>
-                           </thead>
-                           <tbody id="customers">
-                              {/* <tr className="btn-reveal-trigger">
+    return (
+        <Fragment>
+            <PageTitle activeMenu="Customers" motherMenu="Shop"/>
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="card">
+                        <div className="card-body">
+                            <div className="table-responsive">
+                                <table className="table mb-0 table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th className="">
+                                            <div className="custom-control custom-checkbox mx-2">
+                                                <input
+                                                    type="checkbox"
+                                                    className="custom-control-input"
+                                                    id="checkAll"
+                                                />
+                                                <label
+                                                    className="custom-control-label"
+                                                    htmlFor="checkAll"
+                                                ></label>
+                                            </div>
+                                        </th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th className="pl-5 width200">
+                                            Billing Address
+                                        </th>
+                                        <th>Joined</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="customers">
+                                    {/* <tr className="btn-reveal-trigger">
                                  <td>{chack(1)}</td>
                                  <td className="py-3">
                                     <Link to="#">
@@ -624,15 +621,15 @@ const Customers = () => {
                                  <td className="py-2">12/07/2014</td>
                                  <td className="py-2 text-right">{drop}</td>
                               </tr> */}
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-               </div>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </Fragment>
-   );
+        </Fragment>
+    );
 };
 
 export default Customers;

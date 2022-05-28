@@ -13,7 +13,9 @@
     text-transform: uppercase;
 }
 
-.cotent_container img { margin-bottom: 42px }
+.cotent_container img {
+    margin-bottom: 42px
+}
 
 .container {
     margin: 0 auto;
@@ -26,7 +28,9 @@
     width: 813px;
 }
 
-.aside_container { width: 300px }
+.aside_container {
+    width: 300px
+}
 
 .cover_image {
     height: 502px;
@@ -40,7 +44,9 @@
     width: 100%
 }
 
-.article_paragraph { margin-bottom: 22px }
+.article_paragraph {
+    margin-bottom: 22px
+}
 
 .article_paragraph > p {
     color: #878787;
@@ -101,7 +107,9 @@
     margin: 0 16px 38px 38px
 }
 
-.aside_article_name { color: #171717 }
+.aside_article_name {
+    color: #171717
+}
 
 .aside_box_desc {
     color: #878787;
@@ -124,7 +132,9 @@
     margin-bottom: 26px;
 }
 
-.aside_latest_articles_box { margin-bottom: 55px }
+.aside_latest_articles_box {
+    margin-bottom: 55px
+}
 
 .aside_latest_articles_img {
     height: 64px;
@@ -155,7 +165,7 @@
 .aside_search_input {
     border-bottom: 1px solid #bebebd;
     outline: 0;
-    width: 237.5px ; 
+    width: 237.5px;
     padding-left: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -176,7 +186,9 @@
     top: 5px;
 }
 
-.article_footer { margin-bottom: 132px }
+.article_footer {
+    margin-bottom: 132px
+}
 
 .article_info {
     color: #171717;
@@ -213,9 +225,13 @@
     text-transform: capitalize;
 }
 
-.comment_section { margin-bottom: 162px }
+.comment_section {
+    margin-bottom: 162px
+}
 
-.comment_section p { margin-bottom: 20px }
+.comment_section p {
+    margin-bottom: 20px
+}
 
 .comment_amount {
     color: #878787;
@@ -229,7 +245,9 @@
     line-height: 52px;
 }
 
-.comment_group_form input { background-color: #f5f5f3 }
+.comment_group_form input {
+    background-color: #f5f5f3
+}
 
 .input_for_comment {
     background: #f5f5f3;
@@ -253,7 +271,9 @@
     width: 400px !important;
 }
 
-.input_for_name { margin-right: 12px }
+.input_for_name {
+    margin-right: 12px
+}
 
 .input_checbox_section {
     margin-bottom: 35px;
@@ -277,7 +297,9 @@
     padding: 21px 40px !important;
 }
 
-.form_submit_button img { margin-left: 5px }
+.form_submit_button img {
+    margin-left: 5px
+}
 
 .social_media_icon {
     color: #171717;
@@ -286,14 +308,18 @@
     text-decoration: none;
 }
 
-.list_group { margin-top: 20px }
+.list_group {
+    margin-top: 20px
+}
 
 .list_group > li {
     list-style-type: disc;
     margin-left: 20px
 }
 
-.list_group > li::marker { font-size: 10px }
+.list_group > li::marker {
+    font-size: 10px
+}
 
 @media screen and (max-width: 1270px) {
     .container {
@@ -315,12 +341,18 @@
         width: 100%;
     }
 
-    .input_for_comment { width: 100% }
+    .input_for_comment {
+        width: 100%
+    }
 
     .footer_another_details,
-    .label_section { flex-wrap: wrap }
+    .label_section {
+        flex-wrap: wrap
+    }
 
-    .personal_info_input > input { width: 100% !important }
+    .personal_info_input > input {
+        width: 100% !important
+    }
 
     .aside_container {
         display: flex;
@@ -329,11 +361,15 @@
         width: 100%;
     }
 
-    .aside_container > div { width: 35% }
+    .aside_container > div {
+        width: 35%
+    }
 }
 
 @media screen and (max-width: 375px) {
-    .article_title { font-size: 28px !important }
+    .article_title {
+        font-size: 28px !important
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -342,7 +378,9 @@
         width: 45%;
     }
 
-    .label_box { margin-top: 5px; }
+    .label_box {
+        margin-top: 5px;
+    }
 
     .article_title {
         font-size: 27px !important;
@@ -356,9 +394,13 @@
         width: 100%;
     }
 
-    .comment_amount { font-size: 30px; }
+    .comment_amount {
+        font-size: 30px;
+    }
 
-    .comment_form_title { font-size: 30px; }
+    .comment_form_title {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -368,7 +410,9 @@
         padding: 0 30px
     }
 
-    .aside_search { margin-bottom: 100px; }
+    .aside_search {
+        margin-bottom: 100px;
+    }
 
     .aside_container > div {
         padding: 0 37px;

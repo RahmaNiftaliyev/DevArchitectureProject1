@@ -1,43 +1,42 @@
-import React,{Fragment} from 'react';
+import React, {Fragment} from 'react';
 import loadable from "@loadable/component";
 import pMinDelay from "p-min-delay";
 import {Link} from 'react-router-dom';
 import {Dropdown} from 'react-bootstrap';
 import EventSlider from './../Karciz/EventPage/EventSlider';
-import card4 from './../../../images/card/4.jpg';
 
 const RevenueChart = loadable(() =>
-	pMinDelay(import("./../Karciz/EventPage/RevenueChart"), 1000)
+    pMinDelay(import("./../Karciz/EventPage/RevenueChart"), 1000)
 );
 const TicketChart = loadable(() =>
-	pMinDelay(import("./../Karciz/EventPage/TicketChart"), 1000)
+    pMinDelay(import("./../Karciz/EventPage/TicketChart"), 1000)
 );
 const SellingApexChart = loadable(() =>
-	pMinDelay(import("./../Karciz/EventPage/SellingApexChart"), 1000)
+    pMinDelay(import("./../Karciz/EventPage/SellingApexChart"), 1000)
 );
 
 const eventTableData = [
-	{ id: '#0012451', date: '04/08/2020 12:34 AM', cname:'Elisabeth Queen', ticket:'4 Pcs', statusblog: 'NO',},
-	{ id: '#0012452', date: '05/08/2020 11:21 AM', cname:'Lilibet Queen', ticket:'5 Pcs', statusblog: 'NO',},
-	{ id: '#0012453', date: '07/08/2020 12:15 AM', cname:'Aquitaine Queen', ticket:'6 Pcs', statusblog: 'YES',},
-	{ id: '#0012454', date: '08/08/2020 10:18 AM', cname:'Hainault Queen', ticket:'8 Pcs', statusblog: 'NO',},
-	{ id: '#0012455', date: '09/08/2020 11:23 AM', cname:'Anne Queen', ticket:'9 Pcs', statusblog: 'NO',},
-	{ id: '#0012456', date: '09/08/2020 12:34 AM', cname:'Victoria Queen', ticket:'2 Pcs', statusblog: 'Yes',},
+    {id: '#0012451', date: '04/08/2020 12:34 AM', cname: 'Elisabeth Queen', ticket: '4 Pcs', statusblog: 'NO',},
+    {id: '#0012452', date: '05/08/2020 11:21 AM', cname: 'Lilibet Queen', ticket: '5 Pcs', statusblog: 'NO',},
+    {id: '#0012453', date: '07/08/2020 12:15 AM', cname: 'Aquitaine Queen', ticket: '6 Pcs', statusblog: 'YES',},
+    {id: '#0012454', date: '08/08/2020 10:18 AM', cname: 'Hainault Queen', ticket: '8 Pcs', statusblog: 'NO',},
+    {id: '#0012455', date: '09/08/2020 11:23 AM', cname: 'Anne Queen', ticket: '9 Pcs', statusblog: 'NO',},
+    {id: '#0012456', date: '09/08/2020 12:34 AM', cname: 'Victoria Queen', ticket: '2 Pcs', statusblog: 'Yes',},
 ];
 
 const EventPage = () => {
-	return(
-		<Fragment>
-			<div className="page-titles">
-				<ol className="breadcrumb">
-					<li className="breadcrumb-item active"><Link to={"#"}>Görüş</Link></li>
-					<li className="breadcrumb-item"><Link to={"#"}>Keciriləcək Görüşün acıqlaması</Link></li>
-				</ol>
-			</div>
-			<div className="row">
-				<div className="col-xl-9 col-xxl-8">
-					<div className="row">
-						{/* <div className="col-xl-12">
+    return (
+        <Fragment>
+            <div className="page-titles">
+                <ol className="breadcrumb">
+                    <li className="breadcrumb-item active"><Link to={"#"}>Görüş</Link></li>
+                    <li className="breadcrumb-item"><Link to={"#"}>Keciriləcək Görüşün acıqlaması</Link></li>
+                </ol>
+            </div>
+            <div className="row">
+                <div className="col-xl-9 col-xxl-8">
+                    <div className="row">
+                        {/* <div className="col-xl-12">
 							<div className="card">
 								<div className="card-body">
 									<div className="media d-md-flex d-block border-bottom pb-sm-4 pb-2 mb-4 text-md-left text-center">
@@ -142,22 +141,22 @@ const EventPage = () => {
 								</div>
 							</div>
 						</div> */}
-						<div className="col-md-4 col-sm-6">
-							<div className="card overflow-hidden">
-								<div className="card-header border-0 pb-0">
-									<div>
-										<p className="mb-2 font-w100">Gəlir</p>
-										<h3 className="mb-0 fs-24 font-w600">Azn 0</h3>
-									</div>
-								</div>
-								<div className="card-body p-0">	
-									<div className="col-7 px-0 offset-5 mt-widget">
-										<RevenueChart />
-									</div>
-								</div>
-							</div>
-						</div>
-						{/* <div className="col-md-4 col-sm-6">
+                        <div className="col-md-4 col-sm-6">
+                            <div className="card overflow-hidden">
+                                <div className="card-header border-0 pb-0">
+                                    <div>
+                                        <p className="mb-2 font-w100">Gəlir</p>
+                                        <h3 className="mb-0 fs-24 font-w600">Azn 0</h3>
+                                    </div>
+                                </div>
+                                <div className="card-body p-0">
+                                    <div className="col-7 px-0 offset-5 mt-widget">
+                                        <RevenueChart/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className="col-md-4 col-sm-6">
 							<div className="card overflow-hidden">
 								<div className="card-header border-0 pb-0">
 									<div>
@@ -172,7 +171,7 @@ const EventPage = () => {
 								</div>
 							</div>
 						</div> */}
-						{/* <div className="col-md-4">
+                        {/* <div className="col-md-4">
 							<div className="card overflow-hidden bg-image bg-danger" >
 								<div className="card-header  border-0">
 									<div>
@@ -182,26 +181,26 @@ const EventPage = () => {
 								</div>
 							</div>
 						</div> */}
-						<div className="col-xl-12">
-							<h4 className="fs-20 mb-4">Öncəki sifarişlər</h4>
-						</div>
-						<div className="col-xl-12">
-							<div className="card">
-								<div className="card-body p-0">
-									<div className="table-responsive fs-14">
-										<table className="table table-responsive-md">
-											<thead>
-												<tr>
-													<th><strong>Sifariş Nömrəsi</strong></th>
-													<th><strong>Tarix</strong></th>
-													<th><strong>Müştəri Adı</strong></th>
-													<th><strong>Lokasiya</strong></th>
-													<th><strong>Sifariş</strong></th>
-													<th><strong>İmtina</strong></th>     
-												</tr>
-											</thead>
-											<tbody>
-												{/* {eventTableData.map((item,index)=>(
+                        <div className="col-xl-12">
+                            <h4 className="fs-20 mb-4">Öncəki sifarişlər</h4>
+                        </div>
+                        <div className="col-xl-12">
+                            <div className="card">
+                                <div className="card-body p-0">
+                                    <div className="table-responsive fs-14">
+                                        <table className="table table-responsive-md">
+                                            <thead>
+                                            <tr>
+                                                <th><strong>Sifariş Nömrəsi</strong></th>
+                                                <th><strong>Tarix</strong></th>
+                                                <th><strong>Müştəri Adı</strong></th>
+                                                <th><strong>Lokasiya</strong></th>
+                                                <th><strong>Sifariş</strong></th>
+                                                <th><strong>İmtina</strong></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {/* {eventTableData.map((item,index)=>(
 													<tr key={index}>
 														<td>{item.id}</td>
 														<td>{item.date}</td>
@@ -211,62 +210,64 @@ const EventPage = () => {
 														<td><strong>{item.statusblog}</strong></td>
 													</tr>
 												))} */}
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div className="col-xl-3 col-xxl-4">
-					<div className="row">
-						<div className="col-xl-12">
-							<div className="card overflow-hidden bg-image-2" >
-								<div className="card-header  border-0">
-									<div>
-										<p className="mb-2 font-w100 text-white">Ümumi Rəy</p>
-										<h3 className="mb-0 fs-24 font-w600">Rəy yoxdur</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="col-xl-12 col-md-6">
-							<div className="card">
-								<div className="card-header border-0 pb-0">
-									<h4 className="fs-20">Ən Yaxşı</h4>
-									<Dropdown>
-										<Dropdown.Toggle variant="" as="div" className="fs-12">Bu həftə</Dropdown.Toggle>	
-										<Dropdown.Menu alignRight={true} className="dropdown-menu-right">
-											<Dropdown.Item >Gündəlik</Dropdown.Item>
-											<Dropdown.Item >Həftəlik</Dropdown.Item>		
-											<Dropdown.Item >Aylıq</Dropdown.Item>		
-										</Dropdown.Menu>	
-									</Dropdown>
-								</div>
-								<div className="card-body pb-3">
-									<div className="d-flex justify-content-between align-items-center bg-dark p-3 rounded">	
-										<span className="text-white fs-14">Bazar</span>
-										<span className="text-white fs-14">0 əd</span>
-									</div>
-									<div id="lineChart">
-										<SellingApexChart />
-									</div>
-								</div>
-								<div className="card-footer border-0 p-0">
-									<Link to={"#"} className="btn btn-primary d-block rounded">Statistika yarat</Link>
-								</div>
-							</div>
-						</div>
-						<div className="col-xl-12 col-md-6">
-							<h4 className="fs-20 mb-4">İclas/qalereya</h4>
-							<EventSlider />
-						</div>
-					</div>
-				</div>
-			</div>
-		</Fragment>
-	)
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-xl-3 col-xxl-4">
+                    <div className="row">
+                        <div className="col-xl-12">
+                            <div className="card overflow-hidden bg-image-2">
+                                <div className="card-header  border-0">
+                                    <div>
+                                        <p className="mb-2 font-w100 text-white">Ümumi Rəy</p>
+                                        <h3 className="mb-0 fs-24 font-w600">Rəy yoxdur</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-12 col-md-6">
+                            <div className="card">
+                                <div className="card-header border-0 pb-0">
+                                    <h4 className="fs-20">Ən Yaxşı</h4>
+                                    <Dropdown>
+                                        <Dropdown.Toggle variant="" as="div" className="fs-12">Bu
+                                            həftə</Dropdown.Toggle>
+                                        <Dropdown.Menu alignRight={true} className="dropdown-menu-right">
+                                            <Dropdown.Item>Gündəlik</Dropdown.Item>
+                                            <Dropdown.Item>Həftəlik</Dropdown.Item>
+                                            <Dropdown.Item>Aylıq</Dropdown.Item>
+                                        </Dropdown.Menu>
+                                    </Dropdown>
+                                </div>
+                                <div className="card-body pb-3">
+                                    <div
+                                        className="d-flex justify-content-between align-items-center bg-dark p-3 rounded">
+                                        <span className="text-white fs-14">Bazar</span>
+                                        <span className="text-white fs-14">0 əd</span>
+                                    </div>
+                                    <div id="lineChart">
+                                        <SellingApexChart/>
+                                    </div>
+                                </div>
+                                <div className="card-footer border-0 p-0">
+                                    <Link to={"#"} className="btn btn-primary d-block rounded">Statistika yarat</Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-12 col-md-6">
+                            <h4 className="fs-20 mb-4">İclas/qalereya</h4>
+                            <EventSlider/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Fragment>
+    )
 }
 export default EventPage;

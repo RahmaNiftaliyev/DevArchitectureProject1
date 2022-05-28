@@ -1,22 +1,22 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, {createContext, useEffect, useState} from "react";
 
 export const ThemeContext = createContext();
 const ThemeContextProvider = (props) => {
-   const body = document.querySelector("body");
+    const body = document.querySelector("body");
     const [windowWidth, setWindowWidth] = useState(0);
     const [windowHeight, setWindowHeight] = useState(0);
-	
+
     useEffect(() => {
-		const body = document.querySelector("body");
-		let resizeWindow = () => {
-			setWindowWidth(window.innerWidth);
-			setWindowHeight(window.innerHeight);
-			window.innerWidth >= 768 && window.innerWidth < 1300
-			? body.setAttribute("data-sidebar-style", "overlay")
-			: window.innerWidth <= 768
-			? body.setAttribute("data-sidebar-style", "overlay")
-			: body.setAttribute("data-sidebar-style", "full");
-		};
+        const body = document.querySelector("body");
+        let resizeWindow = () => {
+            setWindowWidth(window.innerWidth);
+            setWindowHeight(window.innerHeight);
+            window.innerWidth >= 768 && window.innerWidth < 1300
+                ? body.setAttribute("data-sidebar-style", "overlay")
+                : window.innerWidth <= 768
+                    ? body.setAttribute("data-sidebar-style", "overlay")
+                    : body.setAttribute("data-sidebar-style", "full");
+        };
         body.setAttribute("data-typography", "poppins");
         // body.setAttribute("data-theme-version", "light");
         body.setAttribute("data-theme-version", "dark");
@@ -35,16 +35,16 @@ const ThemeContextProvider = (props) => {
         return () => window.removeEventListener("resize", resizeWindow);
     }, []);
     return (
-    <ThemeContext.Provider
-      value={{
-        body,
-		windowWidth,
-		windowHeight
-	}}
-    >
-      {props.children}
-    </ThemeContext.Provider>
-  );
+        <ThemeContext.Provider
+            value={{
+                body,
+                windowWidth,
+                windowHeight
+            }}
+        >
+            {props.children}
+        </ThemeContext.Provider>
+    );
 };
 
 export default ThemeContextProvider;

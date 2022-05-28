@@ -2,8 +2,8 @@
  *   Copyright (c) 2022
  *   All rights reserved.
  */
-import { createSlice, createEntityAdapter } from "@reduxjs/toolkit";
-import { footerLinks } from "./footerData";
+import {createEntityAdapter, createSlice} from "@reduxjs/toolkit";
+import {footerLinks} from "./footerData";
 
 const footerAdapter = createEntityAdapter({
     selectId: (footerItem) => footerItem.id,

@@ -1,9 +1,9 @@
 // @ts-nocheck
-import { createSlice, createEntityAdapter, createAsyncThunk } from "@reduxjs/toolkit";
+import {createAsyncThunk, createEntityAdapter, createSlice} from "@reduxjs/toolkit";
 
 const adminAdapter = createEntityAdapter({
-    selectId: ( admin ) => admin.id,
-    sortComparer: ( preAdmin, nextAdmin ) => preAdmin.id.localeCompare(nextAdmin.id)
+    selectId: (admin) => admin.id,
+    sortComparer: (preAdmin, nextAdmin) => preAdmin.id.localeCompare(nextAdmin.id)
 });
 
 const initialState = {
@@ -28,7 +28,7 @@ export const fetchAdmins = createAsyncThunk("admins/fetchAdmins",
     });
 
 export const fetchAdminById = createAsyncThunk("admins/fetchAdminById",
-    async ( id ) => {
+    async (id) => {
         try {
             const response = await fetch(`/api/Admin/getbyid/${id}`);
             return await response.json();
@@ -38,7 +38,7 @@ export const fetchAdminById = createAsyncThunk("admins/fetchAdminById",
     });
 
 export const addAdmin = createAsyncThunk("admins/addAdmin",
-    async ( admin ) => {
+    async (admin) => {
         try {
             const addedAdmin = await fetch("/api/Admin/add",
                 {
@@ -55,7 +55,7 @@ export const addAdmin = createAsyncThunk("admins/addAdmin",
     });
 
 export const updateAdminPassword = createAsyncThunk("admins/updateAdminPassword",
-    async ( admin ) => {
+    async (admin) => {
         try {
             const updatedAdmin = await fetch(`/api/Admin/update/${admin.id}`,
                 {
@@ -72,7 +72,7 @@ export const updateAdminPassword = createAsyncThunk("admins/updateAdminPassword"
     });
 
 export const deleteAdmin = createAsyncThunk("admins/deleteAdmin",
-    async ( id ) => {
+    async (id) => {
         try {
             const response = await fetch(`/api/Admin/delete/${id}`,
                 {
@@ -89,69 +89,69 @@ const sliceInvoker = () => {
         name: "admins",
         initialState,
         reducers: {
-            setChecked: ( state, action ) => {
+            setChecked: (state, action) => {
                 state.checked = action.payload;
             }, // setChecked
-            setSelectedAdmin: ( state, action ) => {
+            setSelectedAdmin: (state, action) => {
                 state.selectedAdmin = action.payload;
             }, // setSelectedAdmin
-            setStatus: ( state, action ) => {
+            setStatus: (state, action) => {
                 state.status = action.payload;
             }, // setStatus
         },
         extraReducers: {
-            [ fetchAdmins.pending ]: ( state, action ) => {
+            [fetchAdmins.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ fetchAdmins.fulfilled ]: ( state, action ) => {
+            [fetchAdmins.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 adminAdapter.setAll(state, action.payload);
             },
-            [ fetchAdmins.rejected ]: ( state, action ) => {
+            [fetchAdmins.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ fetchAdminById.pending ]: ( state, action ) => {
+            [fetchAdminById.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ fetchAdminById.fulfilled ]: ( state, action ) => {
+            [fetchAdminById.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 state.selectedAdmin = action.payload;
             },
-            [ fetchAdminById.rejected ]: ( state, action ) => {
+            [fetchAdminById.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ addAdmin.pending ]: ( state, action ) => {
+            [addAdmin.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ addAdmin.fulfilled ]: ( state, action ) => {
+            [addAdmin.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 adminAdapter.addOne(state, action.payload);
             },
-            [ addAdmin.rejected ]: ( state, action ) => {
+            [addAdmin.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ updateAdminPassword.pending ]: ( state, action ) => {
+            [updateAdminPassword.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ updateAdminPassword.fulfilled ]: ( state, action ) => {
+            [updateAdminPassword.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 state.selectedAdmin = action.payload;
             },
-            [ updateAdminPassword.rejected ]: ( state, action ) => {
+            [updateAdminPassword.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             },
-            [ deleteAdmin.pending ]: ( state, action ) => {
+            [deleteAdmin.pending]: (state, action) => {
                 state.status = "loading";
             },
-            [ deleteAdmin.fulfilled ]: ( state, action ) => {
+            [deleteAdmin.fulfilled]: (state, action) => {
                 state.status = "succeeded";
                 adminAdapter.removeOne(state, action.payload);
             },
-            [ deleteAdmin.rejected ]: ( state, action ) => {
+            [deleteAdmin.rejected]: (state, action) => {
                 state.status = "failed";
                 state.error = action.payload;
             }

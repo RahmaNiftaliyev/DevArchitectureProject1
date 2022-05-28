@@ -2,10 +2,9 @@
 import React from "react";
 import Navigation from "../../navigation/Navigation";
 import ArticleHeader from "./ArticleHeader";
-import styles from "./articles.module.css";
 import whiteThinkWiseLogo from "./../common/assets/svg/navigation-black-logo.svg";
 
-const ArticleHeaderDash = ({ headerText, isArticle }) => {
+const ArticleHeaderDash = ({headerText, isArticle}) => {
     return (
         <div>
             <Navigation

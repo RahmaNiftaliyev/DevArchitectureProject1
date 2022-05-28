@@ -3,8 +3,8 @@
  *   All rights reserved.
  */
 
-import { createSlice, createEntityAdapter } from "@reduxjs/toolkit";
-import { homeData } from "./homeData";
+import {createEntityAdapter, createSlice} from "@reduxjs/toolkit";
+import {homeData} from "./homeData";
 
 const homeAdapter = createEntityAdapter({
     selectId: (item) => item.id,

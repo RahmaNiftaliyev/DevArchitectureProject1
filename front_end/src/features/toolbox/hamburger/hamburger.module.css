@@ -79,7 +79,9 @@ img[alt='slider menu bg'] {
 }
 
 @keyframes textclip {
-    to { background-position: 200% center }
+    to {
+        background-position: 200% center
+    }
 }
 
 .menu_centerer {
@@ -117,7 +119,9 @@ img[alt='slider menu bg'] {
     max-width: 505px;
 }
 
-.service_logo_box { margin-bottom: 20px }
+.service_logo_box {
+    margin-bottom: 20px
+}
 
 .our_team_sub_title {
     color: #8b8b8b;
@@ -134,5 +138,7 @@ img[alt='slider menu bg'] {
         width: 100%;
     }
 
-    .display_inline_animation_view { display: inline-block }
+    .display_inline_animation_view {
+        display: inline-block
+    }
 }

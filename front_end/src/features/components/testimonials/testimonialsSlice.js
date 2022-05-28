@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createEntityAdapter, createSlice } from "@reduxjs/toolkit"
+import {createEntityAdapter, createSlice} from "@reduxjs/toolkit"
 import demirchi from "./../about/assets/img/customers/demirchi-tower.png";
 import absheronsherab from "./../about/assets/img/customers/absheron-sherab.png";
 import antaris from "./../about/assets/img/customers/antaris.png";
@@ -42,18 +42,18 @@ const initialState = {
             "ids12",
         ],
         entities: {
-            ids1: { id: "ids1", name: "demirchi", img: demirchi },
-            ids2: { id: "ids2", name: "absheronsherab", img: absheronsherab },
-            ids3: { id: "ids3", name: "antaris", img: antaris },
-            ids4: { id: "ids4", name: "prestijkimya", img: prestijkimya },
-            ids5: { id: "ids5", name: "bakiabadliq", img: bakiabadliq },
-            ids6: { id: "ids6", name: "azminerals", img: azminerals },
-            ids7: { id: "ids7", name: "elbor", img: elbor },
-            ids8: { id: "ids8", name: "imaenergy", img: imaenergy },
-            ids9: { id: "ids9", name: "mansard", img: mansard },
-            ids10: { id: "ids10", name: "oilsupply", img: oilsupply },
-            ids11: { id: "ids11", name: "tuvaustria", img: tuvaustria },
-            ids12: { id: "ids12", name: "vipexaz", img: vipexaz },
+            ids1: {id: "ids1", name: "demirchi", img: demirchi},
+            ids2: {id: "ids2", name: "absheronsherab", img: absheronsherab},
+            ids3: {id: "ids3", name: "antaris", img: antaris},
+            ids4: {id: "ids4", name: "prestijkimya", img: prestijkimya},
+            ids5: {id: "ids5", name: "bakiabadliq", img: bakiabadliq},
+            ids6: {id: "ids6", name: "azminerals", img: azminerals},
+            ids7: {id: "ids7", name: "elbor", img: elbor},
+            ids8: {id: "ids8", name: "imaenergy", img: imaenergy},
+            ids9: {id: "ids9", name: "mansard", img: mansard},
+            ids10: {id: "ids10", name: "oilsupply", img: oilsupply},
+            ids11: {id: "ids11", name: "tuvaustria", img: tuvaustria},
+            ids12: {id: "ids12", name: "vipexaz", img: vipexaz},
         }
     }
 };

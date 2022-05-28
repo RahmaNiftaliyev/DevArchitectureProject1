@@ -1,18 +1,15 @@
-import React, { Fragment } from "react";
+import React, {Fragment} from "react";
 import PageTitle from "../../../../layouts/PageTitle";
-import { Dropdown } from "react-bootstrap";
+import {Dropdown} from "react-bootstrap";
 
 /// images
-import avartar5 from "../../../../../images/avatar/5.png";
-import avartar1 from "../../../../../images/avatar/1.png";
-import { Link } from "react-router-dom";
 
 const Customers = () => {
-   const drop = (
-      <Dropdown>
-         <Dropdown.Toggle variant="primary"  className="table-dropdown i-false btn  tp-btn-light sharp">
+    const drop = (
+        <Dropdown>
+            <Dropdown.Toggle variant="primary" className="table-dropdown i-false btn  tp-btn-light sharp">
 			<span className="fs--1">
-				<svg xmlns="http://www.w3.org/2000/svg"  width="18px" height="18px" viewBox="0 0 24 24" version="1.1">
+				<svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" version="1.1">
 					<g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
 						<rect x="0" y="0" width="24" height="24"></rect>
 						<circle fill="#000000" cx="5" cy="12" r="2"></circle>
@@ -21,91 +18,91 @@ const Customers = () => {
 					</g>
 				</svg>
 			</span>
-         </Dropdown.Toggle>
-         <Dropdown.Menu>
-            <Dropdown.Item href="#">Redaktə et</Dropdown.Item>
-            <Dropdown.Item href="#" className="text-danger">
-               Delete
-            </Dropdown.Item>
-         </Dropdown.Menu>
-      </Dropdown>
-   );
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+                <Dropdown.Item href="#">Redaktə et</Dropdown.Item>
+                <Dropdown.Item href="#" className="text-danger">
+                    Delete
+                </Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
+    );
 
-   const chackbox = document.querySelectorAll(".customer_shop_single input");
-   const motherChackBox = document.querySelector(".customer_shop input");
-   const chackboxFun = (type) => {
-      for (let i = 0; i < chackbox.length; i++) {
-         const element = chackbox[i];
-         if (type === "all") {
-            if (motherChackBox.checked) {
-               element.checked = true;
+    const chackbox = document.querySelectorAll(".customer_shop_single input");
+    const motherChackBox = document.querySelector(".customer_shop input");
+    const chackboxFun = (type) => {
+        for (let i = 0; i < chackbox.length; i++) {
+            const element = chackbox[i];
+            if (type === "all") {
+                if (motherChackBox.checked) {
+                    element.checked = true;
+                } else {
+                    element.checked = false;
+                }
             } else {
-               element.checked = false;
+                if (!element.checked) {
+                    motherChackBox.checked = false;
+                    break;
+                } else {
+                    motherChackBox.checked = true;
+                }
             }
-         } else {
-            if (!element.checked) {
-               motherChackBox.checked = false;
-               break;
-            } else {
-               motherChackBox.checked = true;
-            }
-         }
-      }
-   };
+        }
+    };
 
-   const chack = (i) => (
-      <div className={`custom-control custom-checkbox ml-2`}>
-         <input
-            type="checkbox"
-            className="custom-control-input "
-            id={`checkAll${i}`}
-            required=""
-            onClick={() => chackboxFun()}
-         />
-         <label
-            className="custom-control-label"
-            htmlFor={`checkAll${i}`}
-         ></label>
-      </div>
-   );
+    const chack = (i) => (
+        <div className={`custom-control custom-checkbox ml-2`}>
+            <input
+                type="checkbox"
+                className="custom-control-input "
+                id={`checkAll${i}`}
+                required=""
+                onClick={() => chackboxFun()}
+            />
+            <label
+                className="custom-control-label"
+                htmlFor={`checkAll${i}`}
+            ></label>
+        </div>
+    );
 
-   return (
-      <Fragment>
-         <PageTitle activeMenu="Shop" motherMenu="Customers" />
-         <div className="row">
-            <div className="col-lg-12">
-               <div className="card">
-                  <div className="card-body">
-                     <div className="table-responsive">
-                        <table className="table mb-0 table-striped respon-table-data">
-                           <thead>
-                              <tr>
-                                 <th className="customer_shop">
-                                    <div className="custom-control custom-checkbox mx-2">
-                                       <input
-                                          type="checkbox"
-                                          className="custom-control-input"
-                                          id="checkAll"
-                                          onClick={() => chackboxFun("all")}
-                                       />
-                                       <label
-                                          className="custom-control-label"
-                                          htmlFor="checkAll"
-                                       ></label>
-                                    </div>
-                                 </th>
-                                 <th>Ad</th>
-                                 <th>Email</th>
-                                 <th>Əlaqə/mobil</th>
-                                 <th className="pl-5" style={{minWidth:200}}>
-                                    Ödəniş adresi
-                                 </th>
-                                 <th>Qoşulub</th>
-                                 <th></th>
-                              </tr>
-                           </thead>
-                           <tbody id="customers">
-                              {/* <tr className="btn-reveal-trigger">
+    return (
+        <Fragment>
+            <PageTitle activeMenu="Shop" motherMenu="Customers"/>
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="card">
+                        <div className="card-body">
+                            <div className="table-responsive">
+                                <table className="table mb-0 table-striped respon-table-data">
+                                    <thead>
+                                    <tr>
+                                        <th className="customer_shop">
+                                            <div className="custom-control custom-checkbox mx-2">
+                                                <input
+                                                    type="checkbox"
+                                                    className="custom-control-input"
+                                                    id="checkAll"
+                                                    onClick={() => chackboxFun("all")}
+                                                />
+                                                <label
+                                                    className="custom-control-label"
+                                                    htmlFor="checkAll"
+                                                ></label>
+                                            </div>
+                                        </th>
+                                        <th>Ad</th>
+                                        <th>Email</th>
+                                        <th>Əlaqə/mobil</th>
+                                        <th className="pl-5" style={{minWidth: 200}}>
+                                            Ödəniş adresi
+                                        </th>
+                                        <th>Qoşulub</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="customers">
+                                    {/* <tr className="btn-reveal-trigger">
                                  <td className="customer_shop_single">
                                     {chack(1)}
                                  </td>
@@ -649,15 +646,15 @@ const Customers = () => {
                                  <td className="py-2">12/07/2014</td>
                                  <td className="py-2 text-right">{drop}</td>
                               </tr> */}
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-               </div>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </Fragment>
-   );
+        </Fragment>
+    );
 };
 
 export default Customers;

@@ -3,17 +3,29 @@
     line-height: 24px
 }
 
-.vertical_middle { vertical-align: middle }
+.vertical_middle {
+    vertical-align: middle
+}
 
-.padding_right_icon { margin-right: 15px }
+.padding_right_icon {
+    margin-right: 15px
+}
 
-.navigation_logo_margin_right { margin-right: 48px }
+.navigation_logo_margin_right {
+    margin-right: 48px
+}
 
-.margin_right_button_enabled { margin-right: 14px }
+.margin_right_button_enabled {
+    margin-right: 14px
+}
 
-.margin_right_hamburger_enabled { margin-right: 20px }
+.margin_right_hamburger_enabled {
+    margin-right: 20px
+}
 
-.navigation_padding_top { padding-top: 9px }
+.navigation_padding_top {
+    padding-top: 9px
+}
 
 .link_none {
     -moz-transition: all .1s ease-in;
@@ -33,7 +45,9 @@
     white-space: nowrap;
 }
 
-.link_none:hover { color: #fff }
+.link_none:hover {
+    color: #fff
+}
 
 .link_height {
     height: 25px;
@@ -46,4 +60,6 @@
     padding-top: 11px;
 }
 
-.link_margin_left { margin-left: 27px; }
+.link_margin_left {
+    margin-left: 27px;
+}

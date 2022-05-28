@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createSlice, createEntityAdapter, createAsyncThunk } from "@reduxjs/toolkit";
+import {createAsyncThunk, createEntityAdapter, createSlice} from "@reduxjs/toolkit";
 
 const adapterCreator = () => {
     return {
@@ -179,5 +179,5 @@ export const {
     selectTotal: selectTotalArticles
 } = articlesAdapter.getSelectors((state) => state.articles.articles);
 
-export const { setSelectedArticle, setError, setStatus, setArticles, addArticles } = articlesSlice.actions;
+export const {setSelectedArticle, setError, setStatus, setArticles, addArticles} = articlesSlice.actions;
 export default articlesSlice.reducer;

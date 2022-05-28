@@ -1,204 +1,203 @@
-import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
-import profileImage from "../../../../../images/avatar/1.jpg";
+import React, {Fragment} from "react";
+import {Link} from "react-router-dom";
 
-import { Dropdown } from "react-bootstrap";
+import {Dropdown} from "react-bootstrap";
 import PageTitle from "../../../../layouts/PageTitle";
 
 const Read = () => {
-  return (
-    <Fragment>
-      <PageTitle activeMenu="Read" motherMenu="Email" />
+    return (
+        <Fragment>
+            <PageTitle activeMenu="Read" motherMenu="Email"/>
 
-      <div className="row">
-        <div className="col-lg-12">
-          <div className="card">
-            <div className="card-body">
-              <div className="email-left-box px-0 mb-3">
-                <div className="p-0">
-                  <Link
-                    to="/email-compose"
-                    className="btn btn-primary btn-block"
-                  >
-                    Yarat
-                  </Link>
-                </div>
-                <div className="mail-list mt-4">
-                  <Link to="/email-inbox" className="list-group-item active">
-                    <i className="fa fa-inbox font-18 align-middle mr-2" />
-                    Gələnlər
-                    <span className="badge badge-primary badge-sm float-right">
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="card">
+                        <div className="card-body">
+                            <div className="email-left-box px-0 mb-3">
+                                <div className="p-0">
+                                    <Link
+                                        to="/email-compose"
+                                        className="btn btn-primary btn-block"
+                                    >
+                                        Yarat
+                                    </Link>
+                                </div>
+                                <div className="mail-list mt-4">
+                                    <Link to="/email-inbox" className="list-group-item active">
+                                        <i className="fa fa-inbox font-18 align-middle mr-2"/>
+                                        Gələnlər
+                                        <span className="badge badge-primary badge-sm float-right">
                       0
                     </span>
-                  </Link>
-                  <Link to="/email-inbox" className="list-group-item">
-                    <i className="fa fa-paper-plane font-18 align-middle mr-2" />
-                    Göndər
-                  </Link>
-                  <Link to="/email-inbox" className="list-group-item">
-                    <i className="fa fa-star font-18 align-middle mr-2" />
-                    Vacib
-                    <span className="badge badge-danger text-white badge-sm float-right">
+                                    </Link>
+                                    <Link to="/email-inbox" className="list-group-item">
+                                        <i className="fa fa-paper-plane font-18 align-middle mr-2"/>
+                                        Göndər
+                                    </Link>
+                                    <Link to="/email-inbox" className="list-group-item">
+                                        <i className="fa fa-star font-18 align-middle mr-2"/>
+                                        Vacib
+                                        <span className="badge badge-danger text-white badge-sm float-right">
                       0
                     </span>
-                  </Link>
-                  <Link to="/email-inbox" className="list-group-item">
-                    <i className="mdi mdi-file-document-box font-18 align-middle mr-2" />
-                    Layihə
-                  </Link>
-                  <Link to="/email-inbox" className="list-group-item">
-                    <i className="fa fa-trash font-18 align-middle mr-2" />
-                    Zibil
-                  </Link>
-                </div>
-                <div className="intro-title d-flex justify-content-between">
-                  <h5>Kateqoriyalar</h5>
-                  <i className="icon-arrow-down" aria-hidden="true" />
-                </div>
-                <div className="mail-list mt-4">
-                  <Link to="/email-inbox" className="list-group-item">
+                                    </Link>
+                                    <Link to="/email-inbox" className="list-group-item">
+                                        <i className="mdi mdi-file-document-box font-18 align-middle mr-2"/>
+                                        Layihə
+                                    </Link>
+                                    <Link to="/email-inbox" className="list-group-item">
+                                        <i className="fa fa-trash font-18 align-middle mr-2"/>
+                                        Zibil
+                                    </Link>
+                                </div>
+                                <div className="intro-title d-flex justify-content-between">
+                                    <h5>Kateqoriyalar</h5>
+                                    <i className="icon-arrow-down" aria-hidden="true"/>
+                                </div>
+                                <div className="mail-list mt-4">
+                                    <Link to="/email-inbox" className="list-group-item">
                     <span className="icon-warning">
-                      <i className="fa fa-circle" aria-hidden="true" />
+                      <i className="fa fa-circle" aria-hidden="true"/>
                     </span>
-                    İş
-                  </Link>
-                  <Link to="/email-inbox" className="list-group-item">
+                                        İş
+                                    </Link>
+                                    <Link to="/email-inbox" className="list-group-item">
                     <span className="icon-primary">
-                      <i className="fa fa-circle" aria-hidden="true" />
+                      <i className="fa fa-circle" aria-hidden="true"/>
                     </span>
-                    Şəxsi
-                  </Link>
-                  <Link to="/email-inbox" className="list-group-item">
+                                        Şəxsi
+                                    </Link>
+                                    <Link to="/email-inbox" className="list-group-item">
                     <span className="icon-success">
-                      <i className="fa fa-circle" aria-hidden="true" />
+                      <i className="fa fa-circle" aria-hidden="true"/>
                     </span>
-                    Dəstək
-                  </Link>
-                  <Link to="/email-inbox" className="list-group-item">
+                                        Dəstək
+                                    </Link>
+                                    <Link to="/email-inbox" className="list-group-item">
                     <span className="icon-dpink">
-                      <i className="fa fa-circle" aria-hidden="true" />
+                      <i className="fa fa-circle" aria-hidden="true"/>
                     </span>
-                    Sosial
-                  </Link>
-                </div>
-              </div>
-              <div className="email-right-box ml-0 ml-sm-4 ml-sm-0">
-                <div className="row">
-                  <div className="col-12">
-                    <div className="right-box-padding">
-                      <div className="toolbar mb-4" role="toolbar">
-                        <div className="btn-group mb-1">
-                          <button
-                            type="button"
-                            className="btn btn-primary light px-3"
-                          >
-                            <i className="fa fa-archive" />
-                          </button>
-                          <button
-                            type="button"
-                            className="btn btn-primary light px-3"
-                          >
-                            <i className="fa fa-exclamation-circle" />
-                          </button>
-                          <button
-                            type="button"
-                            className="btn btn-primary light px-3"
-                          >
-                            <i className="fa fa-trash" />
-                          </button>
-                        </div>
-                        <Dropdown className="btn-group mb-1">
-                          <Dropdown.Toggle
-                            type="button"
-                            className="btn btn-primary light dropdown-toggle px-3 ml-1"
-                            data-toggle="dropdown"
-                          >
-                            <i className="fa fa-folder" />
-                            <b className="caret m-l-5" />
-                          </Dropdown.Toggle>
-                          <Dropdown.Menu className="dropdown-menu">
-                            <Dropdown.Item
-                              as="a"
-                              className="dropdown-item"
-                              to="/email-read"
-                            >
-                              Sosial
-                            </Dropdown.Item>
-                            <Dropdown.Item
-                              as="a"
-                              className="dropdown-item"
-                              to="/email-read"
-                            >
-                              Promosyonlar
-                            </Dropdown.Item>
-                            <Dropdown.Item
-                              as="a"
-                              className="dropdown-item"
-                              to="/email-read"
-                            >
-                              Güncəlliklər
-                            </Dropdown.Item>
-                            <Dropdown.Item
-                              as="a"
-                              className="dropdown-item"
-                              to="/email-read"
-                            >
-                              Formlar
-                            </Dropdown.Item>
-                          </Dropdown.Menu>
-                        </Dropdown>
-                        <Dropdown className="btn-group mb-1">
-                          <Dropdown.Toggle
-                            className="btn btn-primary light dropdown-toggle px-3 ml-1"
-                            data-toggle="dropdown"
-                          >
-                            <i className="fa fa-tag" />
-                          </Dropdown.Toggle>
-                          <Dropdown.Menu>
-                            <Dropdown.Item as="a">Güncəlliklər</Dropdown.Item>
-                            <Dropdown.Item as="a">Sosial</Dropdown.Item>
-                            <Dropdown.Item as="a">Promosyonlar</Dropdown.Item>
-                            <Dropdown.Item as="a">Formlar</Dropdown.Item>
-                          </Dropdown.Menu>
-                        </Dropdown>
-                        <Dropdown className="btn-group mb-1">
-                          <Dropdown.Toggle
-                            type="button"
-                            className="btn btn-primary light dropdown-toggle v ml-1"
-                            data-toggle="dropdown"
-                          >
-                            Daha çox <span className="caret m-l-5" />
-                          </Dropdown.Toggle>
-                          <Dropdown.Menu className="dropdown-menu">
-                            <Dropdown.Item
-                              className="dropdown-item"
-                              to="/email-read"
-                            >
-                              Oxunmamış kimi qeyd et
-                            </Dropdown.Item>
-                            <Dropdown.Item
-                              className="dropdown-item"
-                              to="/email-read"
-                            >
-                              Tapşırıqlara əlavə et
-                            </Dropdown.Item>
-                            <Dropdown.Item
-                              className="dropdown-item"
-                              to="/email-read"
-                            >
-                              İşarələ
-                            </Dropdown.Item>
-                            <Dropdown.Item
-                              className="dropdown-item"
-                              to="/email-read"
-                            >
-                              Email məzmununu daxil edin...
-                            </Dropdown.Item>
-                          </Dropdown.Menu>
-                        </Dropdown>
-                      </div>
-                      <div className="read-content">
-                        {" "}{/* 
+                                        Sosial
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="email-right-box ml-0 ml-sm-4 ml-sm-0">
+                                <div className="row">
+                                    <div className="col-12">
+                                        <div className="right-box-padding">
+                                            <div className="toolbar mb-4" role="toolbar">
+                                                <div className="btn-group mb-1">
+                                                    <button
+                                                        type="button"
+                                                        className="btn btn-primary light px-3"
+                                                    >
+                                                        <i className="fa fa-archive"/>
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        className="btn btn-primary light px-3"
+                                                    >
+                                                        <i className="fa fa-exclamation-circle"/>
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        className="btn btn-primary light px-3"
+                                                    >
+                                                        <i className="fa fa-trash"/>
+                                                    </button>
+                                                </div>
+                                                <Dropdown className="btn-group mb-1">
+                                                    <Dropdown.Toggle
+                                                        type="button"
+                                                        className="btn btn-primary light dropdown-toggle px-3 ml-1"
+                                                        data-toggle="dropdown"
+                                                    >
+                                                        <i className="fa fa-folder"/>
+                                                        <b className="caret m-l-5"/>
+                                                    </Dropdown.Toggle>
+                                                    <Dropdown.Menu className="dropdown-menu">
+                                                        <Dropdown.Item
+                                                            as="a"
+                                                            className="dropdown-item"
+                                                            to="/email-read"
+                                                        >
+                                                            Sosial
+                                                        </Dropdown.Item>
+                                                        <Dropdown.Item
+                                                            as="a"
+                                                            className="dropdown-item"
+                                                            to="/email-read"
+                                                        >
+                                                            Promosyonlar
+                                                        </Dropdown.Item>
+                                                        <Dropdown.Item
+                                                            as="a"
+                                                            className="dropdown-item"
+                                                            to="/email-read"
+                                                        >
+                                                            Güncəlliklər
+                                                        </Dropdown.Item>
+                                                        <Dropdown.Item
+                                                            as="a"
+                                                            className="dropdown-item"
+                                                            to="/email-read"
+                                                        >
+                                                            Formlar
+                                                        </Dropdown.Item>
+                                                    </Dropdown.Menu>
+                                                </Dropdown>
+                                                <Dropdown className="btn-group mb-1">
+                                                    <Dropdown.Toggle
+                                                        className="btn btn-primary light dropdown-toggle px-3 ml-1"
+                                                        data-toggle="dropdown"
+                                                    >
+                                                        <i className="fa fa-tag"/>
+                                                    </Dropdown.Toggle>
+                                                    <Dropdown.Menu>
+                                                        <Dropdown.Item as="a">Güncəlliklər</Dropdown.Item>
+                                                        <Dropdown.Item as="a">Sosial</Dropdown.Item>
+                                                        <Dropdown.Item as="a">Promosyonlar</Dropdown.Item>
+                                                        <Dropdown.Item as="a">Formlar</Dropdown.Item>
+                                                    </Dropdown.Menu>
+                                                </Dropdown>
+                                                <Dropdown className="btn-group mb-1">
+                                                    <Dropdown.Toggle
+                                                        type="button"
+                                                        className="btn btn-primary light dropdown-toggle v ml-1"
+                                                        data-toggle="dropdown"
+                                                    >
+                                                        Daha çox <span className="caret m-l-5"/>
+                                                    </Dropdown.Toggle>
+                                                    <Dropdown.Menu className="dropdown-menu">
+                                                        <Dropdown.Item
+                                                            className="dropdown-item"
+                                                            to="/email-read"
+                                                        >
+                                                            Oxunmamış kimi qeyd et
+                                                        </Dropdown.Item>
+                                                        <Dropdown.Item
+                                                            className="dropdown-item"
+                                                            to="/email-read"
+                                                        >
+                                                            Tapşırıqlara əlavə et
+                                                        </Dropdown.Item>
+                                                        <Dropdown.Item
+                                                            className="dropdown-item"
+                                                            to="/email-read"
+                                                        >
+                                                            İşarələ
+                                                        </Dropdown.Item>
+                                                        <Dropdown.Item
+                                                            className="dropdown-item"
+                                                            to="/email-read"
+                                                        >
+                                                            Email məzmununu daxil edin...
+                                                        </Dropdown.Item>
+                                                    </Dropdown.Menu>
+                                                </Dropdown>
+                                            </div>
+                                            <div className="read-content">
+                                                {" "}{/* 
                         <div className='media pt-3 d-sm-flex d-block justify-content-between'>
                           <div className='clearfix mb-3 d-flex'>
                             <img
@@ -307,32 +306,32 @@ const Read = () => {
                           </div>
                         </div>
                         <hr />*/}
-                        <div className="form-group pt-3">
+                                                <div className="form-group pt-3">
                           <textarea
-                            name="write-email"
-                            id="write-email"
-                            cols="30"
-                            rows="5"
-                            className="form-control"
-                            placeholder="Yazacağınız mesajın mətnini daxil edin!"
+                              name="write-email"
+                              id="write-email"
+                              cols="30"
+                              rows="5"
+                              className="form-control"
+                              placeholder="Yazacağınız mesajın mətnini daxil edin!"
                           />
+                                                </div>
+                                            </div>
+                                            <div className="text-right">
+                                                <button className="btn btn-primary " type="button">
+                                                    Göndər
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div className="text-right">
-                        <button className="btn btn-primary " type="button">
-                          Göndər
-                        </button>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </Fragment>
-  );
+        </Fragment>
+    );
 };
 
 export default Read;

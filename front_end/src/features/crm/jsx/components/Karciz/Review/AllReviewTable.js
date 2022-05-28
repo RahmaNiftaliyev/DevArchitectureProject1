@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, {useEffect, useRef, useState} from 'react'
+import {Link} from 'react-router-dom'
 // Image
 import image01 from './../../../../images/avatar/1.jpg'
 import image02 from './../../../../images/avatar/2.jpg'
@@ -78,110 +78,110 @@ const AllReviewTable = () => {
                         aria-describedby="example2_info"
                     >
                         <thead>
-                            <tr role="row">
-                                <th
-                                    className="sorting_asc"
-                                    tabindex="0"
-                                    aria-controls="example5"
-                                    rowspan="1"
-                                    colspan="1"
-                                    aria-sort="ascending"
-                                    aria-label=": activate to sort column descending"
-                                >
-                                    <div className="checkbox mr-0 align-self-center">
-                                        <div className="custom-control custom-checkbox ">
-                                            <input
-                                                type="checkbox"
-                                                onClick={() =>
-                                                    chackboxFun('all')
-                                                }
-                                                className="custom-control-input"
-                                                id="checkAll"
-                                                required=""
-                                            />
-                                            <label
-                                                className="custom-control-label"
-                                                for="checkAll"
-                                            ></label>
-                                        </div>
+                        <tr role="row">
+                            <th
+                                className="sorting_asc"
+                                tabindex="0"
+                                aria-controls="example5"
+                                rowspan="1"
+                                colspan="1"
+                                aria-sort="ascending"
+                                aria-label=": activate to sort column descending"
+                            >
+                                <div className="checkbox mr-0 align-self-center">
+                                    <div className="custom-control custom-checkbox ">
+                                        <input
+                                            type="checkbox"
+                                            onClick={() =>
+                                                chackboxFun('all')
+                                            }
+                                            className="custom-control-input"
+                                            id="checkAll"
+                                            required=""
+                                        />
+                                        <label
+                                            className="custom-control-label"
+                                            for="checkAll"
+                                        ></label>
                                     </div>
-                                </th>
-                                <th
-                                    className="sorting"
-                                    tabindex="0"
-                                    aria-controls="example5"
-                                    rowspan="1"
-                                    colspan="1"
-                                    aria-label="Customer: activate to sort column ascending"
-                                >
-                                    Müştəri
-                                </th>
-                                <th
-                                    className="d-none d-lg-table-cell sorting"
-                                    tabindex="0"
-                                    aria-controls="example5"
-                                    rowspan="1"
-                                    colspan="1"
-                                    aria-label="Event NAME: activate to sort column ascending"
-                                >
-                                    Görüş başlıq
-                                </th>
-                                <th
-                                    className="sorting"
-                                    tabindex="0"
-                                    aria-controls="example5"
-                                    rowspan="1"
-                                    colspan="1"
-                                    aria-label="Stars Review: activate to sort column ascending"
-                                >
-                                    Dəyərləndirmə
-                                </th>
-                                <th className="sorting">İdarə</th>
-                            </tr>
+                                </div>
+                            </th>
+                            <th
+                                className="sorting"
+                                tabindex="0"
+                                aria-controls="example5"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Customer: activate to sort column ascending"
+                            >
+                                Müştəri
+                            </th>
+                            <th
+                                className="d-none d-lg-table-cell sorting"
+                                tabindex="0"
+                                aria-controls="example5"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Event NAME: activate to sort column ascending"
+                            >
+                                Görüş başlıq
+                            </th>
+                            <th
+                                className="sorting"
+                                tabindex="0"
+                                aria-controls="example5"
+                                rowspan="1"
+                                colspan="1"
+                                aria-label="Stars Review: activate to sort column ascending"
+                            >
+                                Dəyərləndirmə
+                            </th>
+                            <th className="sorting">İdarə</th>
+                        </tr>
                         </thead>
 
                         <tbody>
-                            <tr role="row" className="odd">
-                                <td className="sorting_1">
-                                    <div className="checkbox mr-0 align-self-center">
-                                        <div className="custom-control custom-checkbox ">
-                                            <input
-                                                type="checkbox"
-                                                onClick={() => chackboxFun()}
-                                                className="custom-control-input"
-                                                id="customCheckBox2"
-                                                required=""
-                                            />
-                                            <label
-                                                className="custom-control-label"
-                                                for="customCheckBox2"
-                                            ></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div className="media align-items-center">
-                                        <img
-                                            className="img-fluid rounded mr-3 d-none d-xl-inline-block"
-                                            width="70"
-                                            src={image01}
-                                            alt="DexignZone"
+                        <tr role="row" className="odd">
+                            <td className="sorting_1">
+                                <div className="checkbox mr-0 align-self-center">
+                                    <div className="custom-control custom-checkbox ">
+                                        <input
+                                            type="checkbox"
+                                            onClick={() => chackboxFun()}
+                                            className="custom-control-input"
+                                            id="customCheckBox2"
+                                            required=""
                                         />
-                                        <div className="media-body">
-                                            <h4 className="font-w600 mb-1 wspace-no">
-                                                Cindy Hawkins
-                                            </h4>
-                                            <span>
+                                        <label
+                                            className="custom-control-label"
+                                            for="customCheckBox2"
+                                        ></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div className="media align-items-center">
+                                    <img
+                                        className="img-fluid rounded mr-3 d-none d-xl-inline-block"
+                                        width="70"
+                                        src={image01}
+                                        alt="DexignZone"
+                                    />
+                                    <div className="media-body">
+                                        <h4 className="font-w600 mb-1 wspace-no">
+                                            Cindy Hawkins
+                                        </h4>
+                                        <span>
                                                 Sunday, 24 July 2020 04:55 PM
                                             </span>
-                                        </div>
                                     </div>
-                                </td>
-                                <td className="d-none d-lg-table-cell">
-                                    {' '}
-                                    The Story of Danau Toba (Musical Drama)
-                                </td>
-                                <td>
+                                </div>
+                            </td>
+                            <td className="d-none d-lg-table-cell">
+                                {' '}
+                                The Story of Danau Toba (Musical Drama)
+                            </td>
+                            <td>
                                     <span className="star-review d-inline-block mb-2 fs-16 wspace-no wspace-no">
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
@@ -189,69 +189,69 @@ const AllReviewTable = () => {
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-gray"></i>
                                     </span>
-                                    <p className="mb-0 d-none d-xl-inline-block">
-                                        Karciz is one of the best vendors we've
-                                        ever worked with. Thanks for your
-                                        wonderful.
-                                    </p>
-                                </td>
-                                <td>
-                                    <div className="d-flex">
-                                        <Link
-                                            to=""
-                                            className="btn btn-primary light btn-sm px-4"
-                                        >
-                                            Publish
-                                        </Link>
-                                        <Link
-                                            to=""
-                                            className="btn btn-danger light  btn-sm ml-2 px-4"
-                                        >
-                                            Delete
-                                        </Link>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr role="row" className="even">
-                                <td className="sorting_1">
-                                    <div className="checkbox mr-0 align-self-center">
-                                        <div className="custom-control custom-checkbox ">
-                                            <input
-                                                type="checkbox"
-                                                onClick={() => chackboxFun()}
-                                                className="custom-control-input"
-                                                id="customCheckBox21"
-                                                required=""
-                                            />
-                                            <label
-                                                className="custom-control-label"
-                                                for="customCheckBox21"
-                                            ></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div className="media align-items-center">
-                                        <img
-                                            className="img-fluid rounded mr-3 d-none d-xl-inline-block"
-                                            width="70"
-                                            src={image02}
-                                            alt="DexignZone"
+                                <p className="mb-0 d-none d-xl-inline-block">
+                                    Karciz is one of the best vendors we've
+                                    ever worked with. Thanks for your
+                                    wonderful.
+                                </p>
+                            </td>
+                            <td>
+                                <div className="d-flex">
+                                    <Link
+                                        to=""
+                                        className="btn btn-primary light btn-sm px-4"
+                                    >
+                                        Publish
+                                    </Link>
+                                    <Link
+                                        to=""
+                                        className="btn btn-danger light  btn-sm ml-2 px-4"
+                                    >
+                                        Delete
+                                    </Link>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr role="row" className="even">
+                            <td className="sorting_1">
+                                <div className="checkbox mr-0 align-self-center">
+                                    <div className="custom-control custom-checkbox ">
+                                        <input
+                                            type="checkbox"
+                                            onClick={() => chackboxFun()}
+                                            className="custom-control-input"
+                                            id="customCheckBox21"
+                                            required=""
                                         />
-                                        <div className="media-body">
-                                            <h4 className="font-w600 mb-1 wspace-no">
-                                                John Doe
-                                            </h4>
-                                            <span>
+                                        <label
+                                            className="custom-control-label"
+                                            for="customCheckBox21"
+                                        ></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div className="media align-items-center">
+                                    <img
+                                        className="img-fluid rounded mr-3 d-none d-xl-inline-block"
+                                        width="70"
+                                        src={image02}
+                                        alt="DexignZone"
+                                    />
+                                    <div className="media-body">
+                                        <h4 className="font-w600 mb-1 wspace-no">
+                                            John Doe
+                                        </h4>
+                                        <span>
                                                 Sunday, 24 July 2020 04:55 PM
                                             </span>
-                                        </div>
                                     </div>
-                                </td>
-                                <td className="d-none d-lg-table-cell">
-                                    The Story of Danau Toba (Musical Drama)
-                                </td>
-                                <td>
+                                </div>
+                            </td>
+                            <td className="d-none d-lg-table-cell">
+                                The Story of Danau Toba (Musical Drama)
+                            </td>
+                            <td>
                                     <span className="star-review d-inline-block mb-2 fs-16 wspace-no">
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
@@ -259,69 +259,69 @@ const AllReviewTable = () => {
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-gray"></i>
                                     </span>
-                                    <p className="mb-0 d-none d-xl-inline-block">
-                                        I've used Karciz for almost ten years.
-                                        From small general admission church,
-                                        Karciz best deshboard
-                                    </p>
-                                </td>
-                                <td>
-                                    <div className="d-flex">
-                                        <Link
-                                            to=""
-                                            className="btn btn-primary light btn-sm px-4"
-                                        >
-                                            Publish
-                                        </Link>
-                                        <Link
-                                            to=""
-                                            className="btn btn-danger light  btn-sm ml-2 px-4"
-                                        >
-                                            Delete
-                                        </Link>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr role="row" className="odd">
-                                <td className="sorting_1">
-                                    <div className="checkbox mr-0 align-self-center">
-                                        <div className="custom-control custom-checkbox ">
-                                            <input
-                                                type="checkbox"
-                                                onClick={() => chackboxFun()}
-                                                className="custom-control-input"
-                                                id="customCheckBox22"
-                                                required=""
-                                            />
-                                            <label
-                                                className="custom-control-label"
-                                                for="customCheckBox22"
-                                            ></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div className="media align-items-center">
-                                        <img
-                                            className="img-fluid rounded mr-3 d-none d-xl-inline-block"
-                                            width="70"
-                                            src={image03}
-                                            alt="DexignZone"
+                                <p className="mb-0 d-none d-xl-inline-block">
+                                    I've used Karciz for almost ten years.
+                                    From small general admission church,
+                                    Karciz best deshboard
+                                </p>
+                            </td>
+                            <td>
+                                <div className="d-flex">
+                                    <Link
+                                        to=""
+                                        className="btn btn-primary light btn-sm px-4"
+                                    >
+                                        Publish
+                                    </Link>
+                                    <Link
+                                        to=""
+                                        className="btn btn-danger light  btn-sm ml-2 px-4"
+                                    >
+                                        Delete
+                                    </Link>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr role="row" className="odd">
+                            <td className="sorting_1">
+                                <div className="checkbox mr-0 align-self-center">
+                                    <div className="custom-control custom-checkbox ">
+                                        <input
+                                            type="checkbox"
+                                            onClick={() => chackboxFun()}
+                                            className="custom-control-input"
+                                            id="customCheckBox22"
+                                            required=""
                                         />
-                                        <div className="media-body">
-                                            <h4 className="font-w600 mb-1 wspace-no">
-                                                Margaretha Thomp
-                                            </h4>
-                                            <span>
+                                        <label
+                                            className="custom-control-label"
+                                            for="customCheckBox22"
+                                        ></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div className="media align-items-center">
+                                    <img
+                                        className="img-fluid rounded mr-3 d-none d-xl-inline-block"
+                                        width="70"
+                                        src={image03}
+                                        alt="DexignZone"
+                                    />
+                                    <div className="media-body">
+                                        <h4 className="font-w600 mb-1 wspace-no">
+                                            Margaretha Thomp
+                                        </h4>
+                                        <span>
                                                 Sunday, 24 July 2020 04:55 PM
                                             </span>
-                                        </div>
                                     </div>
-                                </td>
-                                <td className="d-none d-lg-table-cell">
-                                    The Story of Danau Toba (Musical Drama)
-                                </td>
-                                <td>
+                                </div>
+                            </td>
+                            <td className="d-none d-lg-table-cell">
+                                The Story of Danau Toba (Musical Drama)
+                            </td>
+                            <td>
                                     <span className="star-review d-inline-block mb-2 fs-16 wspace-no">
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
@@ -329,69 +329,69 @@ const AllReviewTable = () => {
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-gray"></i>
                                     </span>
-                                    <p className="mb-0 d-none d-xl-inline-block">
-                                        Karciz was amazing to work with. So
-                                        helpful, fast to answer any questions,
-                                        and super easy!
-                                    </p>
-                                </td>
-                                <td>
-                                    <div className="d-flex">
-                                        <Link
-                                            to=""
-                                            className="btn btn-primary light btn-sm px-4"
-                                        >
-                                            Publish
-                                        </Link>
-                                        <Link
-                                            to=""
-                                            className="btn btn-danger light  btn-sm ml-2 px-4"
-                                        >
-                                            Delete
-                                        </Link>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr role="row" className="even">
-                                <td className="sorting_1">
-                                    <div className="checkbox mr-0 align-self-center">
-                                        <div className="custom-control custom-checkbox ">
-                                            <input
-                                                type="checkbox"
-                                                onClick={() => chackboxFun()}
-                                                className="custom-control-input"
-                                                id="customCheckBox23"
-                                                required=""
-                                            />
-                                            <label
-                                                className="custom-control-label"
-                                                for="customCheckBox23"
-                                            ></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div className="media align-items-center">
-                                        <img
-                                            className="img-fluid rounded mr-3 d-none d-xl-inline-block"
-                                            width="70"
-                                            src={image04}
-                                            alt="DexignZone"
+                                <p className="mb-0 d-none d-xl-inline-block">
+                                    Karciz was amazing to work with. So
+                                    helpful, fast to answer any questions,
+                                    and super easy!
+                                </p>
+                            </td>
+                            <td>
+                                <div className="d-flex">
+                                    <Link
+                                        to=""
+                                        className="btn btn-primary light btn-sm px-4"
+                                    >
+                                        Publish
+                                    </Link>
+                                    <Link
+                                        to=""
+                                        className="btn btn-danger light  btn-sm ml-2 px-4"
+                                    >
+                                        Delete
+                                    </Link>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr role="row" className="even">
+                            <td className="sorting_1">
+                                <div className="checkbox mr-0 align-self-center">
+                                    <div className="custom-control custom-checkbox ">
+                                        <input
+                                            type="checkbox"
+                                            onClick={() => chackboxFun()}
+                                            className="custom-control-input"
+                                            id="customCheckBox23"
+                                            required=""
                                         />
-                                        <div className="media-body">
-                                            <h4 className="font-w600 mb-1 wspace-no">
-                                                Louis Jovanny
-                                            </h4>
-                                            <span>
+                                        <label
+                                            className="custom-control-label"
+                                            for="customCheckBox23"
+                                        ></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div className="media align-items-center">
+                                    <img
+                                        className="img-fluid rounded mr-3 d-none d-xl-inline-block"
+                                        width="70"
+                                        src={image04}
+                                        alt="DexignZone"
+                                    />
+                                    <div className="media-body">
+                                        <h4 className="font-w600 mb-1 wspace-no">
+                                            Louis Jovanny
+                                        </h4>
+                                        <span>
                                                 Sunday, 24 July 2020 04:55 PM
                                             </span>
-                                        </div>
                                     </div>
-                                </td>
-                                <td className="d-none d-lg-table-cell">
-                                    The Story of Danau Toba (Musical Drama)
-                                </td>
-                                <td>
+                                </div>
+                            </td>
+                            <td className="d-none d-lg-table-cell">
+                                The Story of Danau Toba (Musical Drama)
+                            </td>
+                            <td>
                                     <span className="star-review d-inline-block mb-2 fs-16 wspace-no">
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
@@ -399,69 +399,69 @@ const AllReviewTable = () => {
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-gray"></i>
                                     </span>
-                                    <p className="mb-0 d-none d-xl-inline-block">
-                                        I've used Karciz for almost ten years.
-                                        From small general admission church,
-                                        Karciz best deshboard
-                                    </p>
-                                </td>
-                                <td>
-                                    <div className="d-flex">
-                                        <Link
-                                            to=""
-                                            className="btn btn-primary light btn-sm px-4"
-                                        >
-                                            Publish
-                                        </Link>
-                                        <Link
-                                            to=""
-                                            className="btn btn-danger light  btn-sm ml-2 px-4"
-                                        >
-                                            Delete
-                                        </Link>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr role="row" className="odd">
-                                <td className="sorting_1">
-                                    <div className="checkbox mr-0 align-self-center">
-                                        <div className="custom-control custom-checkbox ">
-                                            <input
-                                                type="checkbox"
-                                                onClick={() => chackboxFun()}
-                                                className="custom-control-input"
-                                                id="customCheckBox211"
-                                                required=""
-                                            />
-                                            <label
-                                                className="custom-control-label"
-                                                for="customCheckBox211"
-                                            ></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div className="media align-items-center">
-                                        <img
-                                            className="img-fluid rounded mr-3 d-none d-xl-inline-block"
-                                            width="70"
-                                            src={image02}
-                                            alt="DexignZone"
+                                <p className="mb-0 d-none d-xl-inline-block">
+                                    I've used Karciz for almost ten years.
+                                    From small general admission church,
+                                    Karciz best deshboard
+                                </p>
+                            </td>
+                            <td>
+                                <div className="d-flex">
+                                    <Link
+                                        to=""
+                                        className="btn btn-primary light btn-sm px-4"
+                                    >
+                                        Publish
+                                    </Link>
+                                    <Link
+                                        to=""
+                                        className="btn btn-danger light  btn-sm ml-2 px-4"
+                                    >
+                                        Delete
+                                    </Link>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr role="row" className="odd">
+                            <td className="sorting_1">
+                                <div className="checkbox mr-0 align-self-center">
+                                    <div className="custom-control custom-checkbox ">
+                                        <input
+                                            type="checkbox"
+                                            onClick={() => chackboxFun()}
+                                            className="custom-control-input"
+                                            id="customCheckBox211"
+                                            required=""
                                         />
-                                        <div className="media-body">
-                                            <h4 className="font-w600 mb-1 wspace-no">
-                                                Cindy Hawkins
-                                            </h4>
-                                            <span>
+                                        <label
+                                            className="custom-control-label"
+                                            for="customCheckBox211"
+                                        ></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div className="media align-items-center">
+                                    <img
+                                        className="img-fluid rounded mr-3 d-none d-xl-inline-block"
+                                        width="70"
+                                        src={image02}
+                                        alt="DexignZone"
+                                    />
+                                    <div className="media-body">
+                                        <h4 className="font-w600 mb-1 wspace-no">
+                                            Cindy Hawkins
+                                        </h4>
+                                        <span>
                                                 Sunday, 24 July 2020 04:55 PM
                                             </span>
-                                        </div>
                                     </div>
-                                </td>
-                                <td className="d-none d-lg-table-cell">
-                                    The Story of Danau Toba (Musical Drama)
-                                </td>
-                                <td>
+                                </div>
+                            </td>
+                            <td className="d-none d-lg-table-cell">
+                                The Story of Danau Toba (Musical Drama)
+                            </td>
+                            <td>
                                     <span className="star-review d-inline-block mb-2 fs-16 wspace-no">
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
@@ -469,69 +469,69 @@ const AllReviewTable = () => {
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-gray"></i>
                                     </span>
-                                    <p className="mb-0 d-none d-xl-inline-block">
-                                        Karciz was amazing to work with. So
-                                        helpful, fast to answer any questions,
-                                        and super easy!
-                                    </p>
-                                </td>
-                                <td>
-                                    <div className="d-flex">
-                                        <Link
-                                            to=""
-                                            className="btn btn-primary light btn-sm px-4"
-                                        >
-                                            Publish
-                                        </Link>
-                                        <Link
-                                            to=""
-                                            className="btn btn-danger light  btn-sm ml-2 px-4"
-                                        >
-                                            Delete
-                                        </Link>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr role="row" className="even">
-                                <td className="sorting_1">
-                                    <div className="checkbox mr-0 align-self-center">
-                                        <div className="custom-control custom-checkbox ">
-                                            <input
-                                                type="checkbox"
-                                                onClick={() => chackboxFun()}
-                                                className="custom-control-input"
-                                                id="customCheckBox24"
-                                                required=""
-                                            />
-                                            <label
-                                                className="custom-control-label"
-                                                for="customCheckBox24"
-                                            ></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div className="media align-items-center">
-                                        <img
-                                            className="img-fluid rounded mr-3 d-none d-xl-inline-block"
-                                            width="70"
-                                            src={image05}
-                                            alt="DexignZone"
+                                <p className="mb-0 d-none d-xl-inline-block">
+                                    Karciz was amazing to work with. So
+                                    helpful, fast to answer any questions,
+                                    and super easy!
+                                </p>
+                            </td>
+                            <td>
+                                <div className="d-flex">
+                                    <Link
+                                        to=""
+                                        className="btn btn-primary light btn-sm px-4"
+                                    >
+                                        Publish
+                                    </Link>
+                                    <Link
+                                        to=""
+                                        className="btn btn-danger light  btn-sm ml-2 px-4"
+                                    >
+                                        Delete
+                                    </Link>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr role="row" className="even">
+                            <td className="sorting_1">
+                                <div className="checkbox mr-0 align-self-center">
+                                    <div className="custom-control custom-checkbox ">
+                                        <input
+                                            type="checkbox"
+                                            onClick={() => chackboxFun()}
+                                            className="custom-control-input"
+                                            id="customCheckBox24"
+                                            required=""
                                         />
-                                        <div className="media-body">
-                                            <h4 className="font-w600 mb-1 wspace-no">
-                                                Glee Smiley
-                                            </h4>
-                                            <span>
+                                        <label
+                                            className="custom-control-label"
+                                            for="customCheckBox24"
+                                        ></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div className="media align-items-center">
+                                    <img
+                                        className="img-fluid rounded mr-3 d-none d-xl-inline-block"
+                                        width="70"
+                                        src={image05}
+                                        alt="DexignZone"
+                                    />
+                                    <div className="media-body">
+                                        <h4 className="font-w600 mb-1 wspace-no">
+                                            Glee Smiley
+                                        </h4>
+                                        <span>
                                                 Sunday, 24 July 2020 04:55 PM
                                             </span>
-                                        </div>
                                     </div>
-                                </td>
-                                <td className="d-none d-lg-table-cell">
-                                    The Story of Danau Toba (Musical Drama)
-                                </td>
-                                <td>
+                                </div>
+                            </td>
+                            <td className="d-none d-lg-table-cell">
+                                The Story of Danau Toba (Musical Drama)
+                            </td>
+                            <td>
                                     <span className="star-review d-inline-block mb-2 fs-16 wspace-no">
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
@@ -539,69 +539,69 @@ const AllReviewTable = () => {
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-gray"></i>
                                     </span>
-                                    <p className="mb-0 d-none d-xl-inline-block">
-                                        I've used Karciz for almost ten years.
-                                        From small general admission church,
-                                        Karciz best deshboard
-                                    </p>
-                                </td>
-                                <td>
-                                    <div className="d-flex">
-                                        <Link
-                                            to=""
-                                            className="btn btn-primary light btn-sm px-4"
-                                        >
-                                            Publish
-                                        </Link>
-                                        <Link
-                                            to=""
-                                            className="btn btn-danger light  btn-sm ml-2 px-4"
-                                        >
-                                            Delete
-                                        </Link>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr role="row" className="odd">
-                                <td className="sorting_1">
-                                    <div className="checkbox mr-0 align-self-center">
-                                        <div className="custom-control custom-checkbox ">
-                                            <input
-                                                type="checkbox"
-                                                onClick={() => chackboxFun()}
-                                                className="custom-control-input"
-                                                id="customCheckBox25"
-                                                required=""
-                                            />
-                                            <label
-                                                className="custom-control-label"
-                                                for="customCheckBox25"
-                                            ></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div className="media align-items-center">
-                                        <img
-                                            className="img-fluid rounded mr-3 d-none d-xl-inline-block"
-                                            width="70"
-                                            src={image06}
-                                            alt="DexignZone"
+                                <p className="mb-0 d-none d-xl-inline-block">
+                                    I've used Karciz for almost ten years.
+                                    From small general admission church,
+                                    Karciz best deshboard
+                                </p>
+                            </td>
+                            <td>
+                                <div className="d-flex">
+                                    <Link
+                                        to=""
+                                        className="btn btn-primary light btn-sm px-4"
+                                    >
+                                        Publish
+                                    </Link>
+                                    <Link
+                                        to=""
+                                        className="btn btn-danger light  btn-sm ml-2 px-4"
+                                    >
+                                        Delete
+                                    </Link>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr role="row" className="odd">
+                            <td className="sorting_1">
+                                <div className="checkbox mr-0 align-self-center">
+                                    <div className="custom-control custom-checkbox ">
+                                        <input
+                                            type="checkbox"
+                                            onClick={() => chackboxFun()}
+                                            className="custom-control-input"
+                                            id="customCheckBox25"
+                                            required=""
                                         />
-                                        <div className="media-body">
-                                            <h4 className="font-w600 mb-1 wspace-no">
-                                                Glee Smiley
-                                            </h4>
-                                            <span>
+                                        <label
+                                            className="custom-control-label"
+                                            for="customCheckBox25"
+                                        ></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div className="media align-items-center">
+                                    <img
+                                        className="img-fluid rounded mr-3 d-none d-xl-inline-block"
+                                        width="70"
+                                        src={image06}
+                                        alt="DexignZone"
+                                    />
+                                    <div className="media-body">
+                                        <h4 className="font-w600 mb-1 wspace-no">
+                                            Glee Smiley
+                                        </h4>
+                                        <span>
                                                 Sunday, 24 July 2020 04:55 PM
                                             </span>
-                                        </div>
                                     </div>
-                                </td>
-                                <td className="d-none d-lg-table-cell">
-                                    The Story of Danau Toba (Musical Drama)
-                                </td>
-                                <td>
+                                </div>
+                            </td>
+                            <td className="d-none d-lg-table-cell">
+                                The Story of Danau Toba (Musical Drama)
+                            </td>
+                            <td>
                                     <span className="star-review d-inline-block mb-2 fs-16 wspace-no wspace-no">
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
@@ -609,68 +609,68 @@ const AllReviewTable = () => {
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-gray"></i>
                                     </span>
-                                    <p className="mb-0 d-none d-xl-inline-block">
-                                        iTickets has been great from starting up
-                                        our account to setting up the event.
-                                    </p>
-                                </td>
-                                <td>
-                                    <div className="d-flex">
-                                        <Link
-                                            to=""
-                                            className="btn btn-primary light btn-sm px-4"
-                                        >
-                                            Çap et
-                                        </Link>
-                                        <Link
-                                            to=""
-                                            className="btn btn-danger light  btn-sm ml-2 px-4"
-                                        >
-                                            Sil
-                                        </Link>
-                                    </div>
-                               </td>
-                            </tr>
-                            <tr role="row" className="even">
-                                <td className="sorting_1">
-                                    <div className="checkbox mr-0 align-self-center">
-                                        <div className="custom-control custom-checkbox ">
-                                            <input
-                                                type="checkbox"
-                                                onClick={() => chackboxFun()}
-                                                className="custom-control-input"
-                                                id="customCheckBox211"
-                                                required=""
-                                            />
-                                            <label
-                                                className="custom-control-label"
-                                                for="customCheckBox211"
-                                            ></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div className="media align-items-center">
-                                        <img
-                                            className="img-fluid rounded mr-3 d-none d-xl-inline-block"
-                                            width="70"
-                                            src={image02}
-                                            alt="DexignZone"
+                                <p className="mb-0 d-none d-xl-inline-block">
+                                    iTickets has been great from starting up
+                                    our account to setting up the event.
+                                </p>
+                            </td>
+                            <td>
+                                <div className="d-flex">
+                                    <Link
+                                        to=""
+                                        className="btn btn-primary light btn-sm px-4"
+                                    >
+                                        Çap et
+                                    </Link>
+                                    <Link
+                                        to=""
+                                        className="btn btn-danger light  btn-sm ml-2 px-4"
+                                    >
+                                        Sil
+                                    </Link>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr role="row" className="even">
+                            <td className="sorting_1">
+                                <div className="checkbox mr-0 align-self-center">
+                                    <div className="custom-control custom-checkbox ">
+                                        <input
+                                            type="checkbox"
+                                            onClick={() => chackboxFun()}
+                                            className="custom-control-input"
+                                            id="customCheckBox211"
+                                            required=""
                                         />
-                                        <div className="media-body">
-                                            <h4 className="font-w600 mb-1 wspace-no">
-                                                Glee Smiley
-                                            </h4>
-                                            <span>
+                                        <label
+                                            className="custom-control-label"
+                                            for="customCheckBox211"
+                                        ></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div className="media align-items-center">
+                                    <img
+                                        className="img-fluid rounded mr-3 d-none d-xl-inline-block"
+                                        width="70"
+                                        src={image02}
+                                        alt="DexignZone"
+                                    />
+                                    <div className="media-body">
+                                        <h4 className="font-w600 mb-1 wspace-no">
+                                            Glee Smiley
+                                        </h4>
+                                        <span>
                                                 Sunday, 24 July 2020 04:55 PM
                                             </span>
-                                        </div>
                                     </div>
-                                </td>
-                                <td className="d-none d-lg-table-cell">
-                                    The Story of Danau Toba (Musical Drama)
-                                </td>
-                                <td>
+                                </div>
+                            </td>
+                            <td className="d-none d-lg-table-cell">
+                                The Story of Danau Toba (Musical Drama)
+                            </td>
+                            <td>
                                     <span className="star-review d-inline-block mb-2 fs-16 wspace-no">
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
@@ -678,29 +678,29 @@ const AllReviewTable = () => {
                                         <i className="fa fa-star fs-16 text-orange"></i>{' '}
                                         <i className="fa fa-star fs-16 text-gray"></i>
                                     </span>
-                                    <p className="mb-0 d-none d-xl-inline-block">
-                                        Karciz is one of the best vendors we've
-                                        ever worked with. Thanks for your
-                                        wonderful,
-                                    </p>
-                                </td>
-                                <td>
-                                    <div className="d-flex">
-                                        <Link
-                                            to=""
-                                            className="btn btn-primary light btn-sm px-4"
-                                        >
-                                            Publish
-                                        </Link>
-                                        <Link
-                                            to=""
-                                            className="btn btn-danger light  btn-sm ml-2 px-4"
-                                        >
-                                            Delete
-                                        </Link>
-                                    </div>
-                                </td>
-                            </tr>
+                                <p className="mb-0 d-none d-xl-inline-block">
+                                    Karciz is one of the best vendors we've
+                                    ever worked with. Thanks for your
+                                    wonderful,
+                                </p>
+                            </td>
+                            <td>
+                                <div className="d-flex">
+                                    <Link
+                                        to=""
+                                        className="btn btn-primary light btn-sm px-4"
+                                    >
+                                        Publish
+                                    </Link>
+                                    <Link
+                                        to=""
+                                        className="btn btn-danger light  btn-sm ml-2 px-4"
+                                    >
+                                        Delete
+                                    </Link>
+                                </div>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
 
@@ -748,7 +748,7 @@ const AllReviewTable = () => {
                                 to="/reviews"
                                 onClick={() =>
                                     activePag.current + 1 <
-                                        paggination.length &&
+                                    paggination.length &&
                                     onClick(activePag.current + 1)
                                 }
                             >

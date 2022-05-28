@@ -3,7 +3,7 @@ import 'react-dropzone-uploader/dist/styles.css'
 import Drop from 'react-dropzone-uploader'
 
 const DropFile = () => {
-    const handleChangeStatus = ({ meta, file }, status) => {
+    const handleChangeStatus = ({meta, file}, status) => {
         console.log(status, meta, file)
     }
 

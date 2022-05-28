@@ -1,26 +1,26 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 /// Scroll
 import PerfectScrollbar from "react-perfect-scrollbar";
 
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
-const EventSidebar = ({ activeEvent }) => {
-   const [value, onChange] = useState(new Date());
+const EventSidebar = ({activeEvent}) => {
+    const [value, onChange] = useState(new Date());
 
-   return (
-      <PerfectScrollbar
-         className={`event-sidebar dz-scroll ${activeEvent ? "active" : ""}`}
-         id="eventSidebar"
-      >
-         <div className="card shadow-none rounded-0 bg-transparent h-auto mb-0">
-            <div className="card-body text-center event-calender pb-2">
-               <Calendar onChange={onChange} value={value} />
+    return (
+        <PerfectScrollbar
+            className={`event-sidebar dz-scroll ${activeEvent ? "active" : ""}`}
+            id="eventSidebar"
+        >
+            <div className="card shadow-none rounded-0 bg-transparent h-auto mb-0">
+                <div className="card-body text-center event-calender pb-2">
+                    <Calendar onChange={onChange} value={value}/>
+                </div>
             </div>
-         </div>
-         {/* <div className="card shadow-none rounded-0 bg-transparent h-auto">
+            {/* <div className="card shadow-none rounded-0 bg-transparent h-auto">
             <div className="card-header border-0 pb-0">
                <h4 className="text-black">Qarşıdan gələn tədbirlər</h4>
             </div>
@@ -121,18 +121,18 @@ const EventSidebar = ({ activeEvent }) => {
                </Link>
             </div>
          </div> */}
-         <div className="card shadow-none rounded-0 bg-transparent h-auto mb-0">
-            <div className="card-body text-center event-calender">
-               <Link
-                  to="#"
-                  className="btn btn-primary btn-rounded btn-lg shadow"
-               >
-                  + Yeni tədbir
-               </Link>
+            <div className="card shadow-none rounded-0 bg-transparent h-auto mb-0">
+                <div className="card-body text-center event-calender">
+                    <Link
+                        to="#"
+                        className="btn btn-primary btn-rounded btn-lg shadow"
+                    >
+                        + Yeni tədbir
+                    </Link>
+                </div>
             </div>
-         </div>
-      </PerfectScrollbar>
-   );
+        </PerfectScrollbar>
+    );
 };
 
 export default EventSidebar;

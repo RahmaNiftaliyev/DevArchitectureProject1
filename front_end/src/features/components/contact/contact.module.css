@@ -4,11 +4,13 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .map_numbers {
     display: flex;
     flex-direction: row;
     margin-top: 165px;
 }
+
 .map_numbers > div {
     height: 801px;
     width: 50%;
@@ -18,9 +20,11 @@
     background-color: #f5f5f3;
     padding-left: 96px;
 }
+
 .number > div {
     margin-top: 308px;
 }
+
 .number > div span,
 form span {
     font-size: 11px;
@@ -29,6 +33,7 @@ form span {
     text-transform: uppercase;
     color: #8b8b8b;
 }
+
 .number div h2,
 form h2 {
     font-size: 36px;
@@ -36,27 +41,34 @@ form h2 {
     font-weight: 400;
     color: #171717;
 }
+
 form h2 {
     padding-bottom: 30px;
 }
+
 .pic_form {
     margin-top: 158px;
     display: flex;
 }
+
 .contact_informations {
     display: flex;
     margin-top: 20px;
 }
+
 .contact_informations a,
 .contact_informations > p {
     color: #878787;
 }
+
 .contact_informations a {
     text-decoration: none;
 }
+
 .contact_informations > p {
     margin-left: 75px;
 }
+
 .form,
 .pic {
     width: 50%;
@@ -65,14 +77,17 @@ form h2 {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .pic {
     background-image: url(./assets/img/contact-common.png);
 }
+
 .form {
     background-image: url(./assets/img/contactbg.png);
     padding-left: 96px;
     padding-top: 133px;
 }
+
 .form button {
     width: 156px;
     height: 47px;
@@ -86,16 +101,18 @@ form h2 {
     align-items: center;
     margin-top: 35px;
 }
+
 .form input[type='email'],
 .form input[type='text'] {
     height: 36px;
     background: #fff;
     border: 1px solid #f5f5f3;
-    padding-left: 15px!important;
-    padding-top: 13px!important;
-    padding-bottom: 13px!important;
+    padding-left: 15px !important;
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
     box-sizing: border-box;
 }
+
 form > input[type='email']::placeholder,
 form > input[type='text']::placeholder {
     font-weight: 400;
@@ -103,6 +120,7 @@ form > input[type='text']::placeholder {
     line-height: 26px;
     color: #878787;
 }
+
 form > textarea {
     height: 204px;
     width: 516px;
@@ -110,10 +128,12 @@ form > textarea {
     border: 1px solid #f5f5f3;
     resize: none;
 }
+
 form > input[type='email'],
 form > textarea {
     margin-top: 10px;
 }
+
 @media screen and (max-width: 767px) {
     .map_numbers,
     .pic_form {
@@ -121,14 +141,15 @@ form > textarea {
     }
 
     .contact_informations a,
-.contact_informations > p {
-    font-size: 14px;
-}
+    .contact_informations > p {
+        font-size: 14px;
+    }
 
     .number div h2 {
         font-size: 24px;
         line-height: 30px;
     }
+
     .map_numbers > div:first-child {
         width: 100%;
         height: 600px;
@@ -142,20 +163,25 @@ form > textarea {
     .number {
         padding: 20px 10px;
     }
+
     .number > div {
         margin-top: 50px;
     }
+
     .form,
     .pic {
         width: 100%;
     }
+
     .form {
         padding: 20px 5px;
     }
+
     .form input[type='email'],
     .form input[type='text'] {
         padding-left: 0;
     }
+
     .form input[type='email'],
     .form input[type='text'],
     form > textarea {

@@ -3,8 +3,8 @@
  *   All rights reserved.
  */
 
-import { createSlice, createEntityAdapter, createAsyncThunk } from "@reduxjs/toolkit";
-import { navigationData } from "./navigationData"
+import {createAsyncThunk, createEntityAdapter, createSlice} from "@reduxjs/toolkit";
+import {navigationData} from "./navigationData"
 
 const navigationAdapter = createEntityAdapter({
     selectId: (item) => item.id,

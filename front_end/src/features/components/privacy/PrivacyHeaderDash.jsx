@@ -5,7 +5,7 @@ import NavHeader from "../../toolbox/navheader/NavHeader"
 // !----------------------------------------------------------
 import blackThinkWiseLogo from "./../common/assets/svg/navigation-white-logo.svg"
 
-const PrivacyHeaderDash = ({ headerText, isPrivacy }) => {
+const PrivacyHeaderDash = ({headerText, isPrivacy}) => {
     return (
         <div>
             <NavHeader

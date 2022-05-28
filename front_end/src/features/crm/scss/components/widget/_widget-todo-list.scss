@@ -1,10 +1,12 @@
 .tdl-holder {
   margin: 0 auto;
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   li {
     background-color: $white;
     border-bottom: 1px solid $border;
@@ -12,6 +14,7 @@
     list-style: none none;
     margin: 0;
     padding: 0;
+
     span {
       margin-left: 35px;
       // color: $l-ctd;
@@ -26,6 +29,7 @@
       }
     }
   }
+
   label {
     cursor: pointer;
     display: block;
@@ -43,12 +47,11 @@
       background-color: #eef1f6;
       color: $dark;
 
-      
 
       a {
         color: $danger;
       }
-      
+
     }
 
     a {
@@ -74,11 +77,13 @@
       }
     }
   }
+
   input {
     &[type=checkbox] {
       cursor: pointer;
       opacity: 0;
       position: absolute;
+
       + i {
         background-color: #fff;
         border: 1px solid #e7e7e7;
@@ -89,15 +94,16 @@
         width: 20px;
         z-index: 1;
         border-radius: 00px;
-		font-size: 11px;
-		border-radius: 4px;
+        font-size: 11px;
+        border-radius: 4px;
       }
+
       &:checked {
 
         + i {
           background: $primary;
           border-color: transparent;
-		  
+
         }
 
         + i::after {
@@ -110,12 +116,14 @@
           z-index: 2;
           color: $white;
         }
+
         ~ span {
           text-decoration: line-through;
           position: relative;
         }
       }
     }
+
     &[type=text] {
       background-color: $white;
       height: 50px;
@@ -124,7 +132,7 @@
 
       &::placeholder {
         color: $dark;
-       }
+      }
     }
   }
 }

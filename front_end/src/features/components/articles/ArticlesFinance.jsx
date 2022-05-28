@@ -1,27 +1,26 @@
 import React, {useEffect} from 'react';
-import { useLocation } from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
 import ArticleHeaderDash from './ArticleHeaderDash';
 import styles from './articles.module.css';
 import coverImgPng from './assets/img/finance-cover.png';
 import whiteArrow from '../../toolbox/buttons/svg/arrow-white.svg';
-import { SiInstagram } from 'react-icons/si';
-import { ImLinkedin2, ImFacebook } from 'react-icons/im';
-import { AiOutlineSearch } from 'react-icons/ai';
+import {SiInstagram} from 'react-icons/si';
+import {ImFacebook, ImLinkedin2} from 'react-icons/im';
+import {AiOutlineSearch} from 'react-icons/ai';
 import articleImgPng1 from './assets/img/startup-small.png';
 import articleImgPng2 from './assets/img/alcohol-small.png';
 import articleImgPng3 from './assets/img/cargo-small.png';
 import relatedArticleImgPng from './assets/img/ntflx.png';
 import Footer from './../../footer/Footer';
+
 const ArticlesFinance = () => {
 
 
-    const { pathname } = useLocation();
+    const {pathname} = useLocation();
 
     useEffect(() => {
-      window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
     }, [pathname]);
-  
-
 
 
     return (
@@ -309,7 +308,7 @@ const ArticlesFinance = () => {
                             </div>
                             <button className={`${styles.form_submit_button}`}>
                                 Paylaş
-                                <img src={whiteArrow} alt="" />
+                                <img src={whiteArrow} alt=""/>
                             </button>
                         </section>
                     </section>
@@ -431,7 +430,7 @@ const ArticlesFinance = () => {
                     </div>
                 </section>
             </section>
-            <Footer />
+            <Footer/>
         </div>
     );
 };

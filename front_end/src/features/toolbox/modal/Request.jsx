@@ -1,10 +1,10 @@
 // @ts-nocheck
-import React, { useState } from "react";
+import React, {useState} from "react";
 import alertify from "alertifyjs";
 import styles from "./request.module.css";
 import arrow from "./assets/arrow.svg";
 
-const Request = ({ classData, classRemover }) => {
+const Request = ({classData, classRemover}) => {
     const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
     const [number, setMNumber] = useState("");
@@ -20,10 +20,10 @@ const Request = ({ classData, classRemover }) => {
             alertify.confirm(
                 "TWC.AZ",
                 "Şəxsi Məlumatlarınız Saxlanılsın ?",
-                function() {
+                function () {
                     alertify.alert("TWC.AZ", `Hörmətli ${fullName} məlumatlarınız saxlanıldı`);
                 },
-                function() {
+                function () {
                     alertify.alert("TWC.AZ", `Hörmətli ${fullName} məlumatlarınız silindi`);
                     setFullName("");
                     setEmail("");

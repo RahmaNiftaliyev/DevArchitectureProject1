@@ -1,17 +1,16 @@
 // @ts-nocheck
-import React, { useState, useEffect } from "react";
-import { useLocation } from 'react-router-dom';
+import React, {useEffect, useState} from "react";
+import {useLocation, useParams} from 'react-router-dom';
 import VacantionHeaderDash from "./VacantionHeaderDash";
 import Footer from "../../footer/Footer";
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
-import { selectVacantionById } from "./careersSlice";
+import {useSelector} from "react-redux";
+import {selectVacantionById} from "./careersSlice";
 import styles from "./career.module.css";
 // !----------------------------------------------------------
 import arrow from "./assets/img/arrow.png";
 
 const Vacantions = () => {
-    const { vacanciesId } = useParams();
+    const {vacanciesId} = useParams();
     const selectedVacancy = useSelector((state) => selectVacantionById(state, vacanciesId));
 
     const [fullName, setFullName] = useState("");
@@ -22,17 +21,16 @@ const Vacantions = () => {
 
     const isDisabled = [fullName, email, number, content, message].every(Boolean);
 
-    const handleSubmit = () => {};
-
-      
-  const { pathname } = useLocation();
+    const handleSubmit = () => {
+    };
 
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    const {pathname} = useLocation();
 
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
 
     return (
@@ -45,7 +43,8 @@ const Vacantions = () => {
                 <div className={`${styles.vacancy_container}`}>
                     <h3>Biz kimik?</h3>
                     <p>
-                        Cənub-Şərqi Avropanın ilk erkən mərhələdə olan saf menecement konsaltinq şirkəti olan TWC gənc, dinamik və
+                        Cənub-Şərqi Avropanın ilk erkən mərhələdə olan saf menecement konsaltinq şirkəti olan TWC gənc,
+                        dinamik və
                         istedadlı komandası ilə hər çətinliyin üstəsindən gəlməyə hazırdır.
                     </p>
                     <h3>İş haqqında</h3>
@@ -55,8 +54,9 @@ const Vacantions = () => {
                     </p>
                     <p>
                         Uğurlu {selectedVacancy.name
-                        } ilk növbədə, biznesin bir çox aspektləri barədə geniş biliklərə malik
-                        olmalıdır. İdeal namizəd həmçinin müştərilərin şirkət dəyərini artıracaq həllər və tövsiyələr təklif etmək
+                    } ilk növbədə, biznesin bir çox aspektləri barədə geniş biliklərə malik
+                        olmalıdır. İdeal namizəd həmçinin müştərilərin şirkət dəyərini artıracaq həllər və tövsiyələr
+                        təklif etmək
                         üçün mükəmməl bacarıqlara malik olmalıdır.
                     </p>
                     <p>TWC-də məqsəd müştərilərin uzunmüddətli müvəffəqiyyətinə dəstək olmaqdır.</p>
@@ -83,9 +83,11 @@ const Vacantions = () => {
                     }
                     <h3>Haqqımızda</h3>
                     <p>
-                        Biz komandamızın müxtəlifliyinə inanırıq, buna görə də biz bərabər imkanlara malik işəgötürənik. Biz yaş,
+                        Biz komandamızın müxtəlifliyinə inanırıq, buna görə də biz bərabər imkanlara malik işəgötürənik.
+                        Biz yaş,
                         irq, din, etnik mənsubiyyət, milli mənşə, cinsi, cinsi orientasiya, ailə vəziyyəti, əlillik və
-                        qanunvericiliklə qorunan digər əsaslar da daxil olmaqla, lakin bununla məhdudlaşmayan, hər hansı bir əlamətə
+                        qanunvericiliklə qorunan digər əsaslar da daxil olmaqla, lakin bununla məhdudlaşmayan, hər hansı
+                        bir əlamətə
                         görə diskriminasiyaya yol vermirik.
                     </p>
 

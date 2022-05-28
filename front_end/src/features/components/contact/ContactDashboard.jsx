@@ -6,9 +6,9 @@ import Footer from './../../footer/Footer';
 const ContactDashboard = () => {
     return (
         <div>
-            <ContactHeaderDash />
-            <Contact />
-            <Footer />
+            <ContactHeaderDash/>
+            <Contact/>
+            <Footer/>
         </div>
     );
 };

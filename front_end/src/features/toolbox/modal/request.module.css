@@ -13,7 +13,9 @@
     width: 100%;
 }
 
-.modal_input { margin-bottom: 5px }
+.modal_input {
+    margin-bottom: 5px
+}
 
 .modal_input,
 .modal_text_area {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 
 import HomeDashboard from './../components/home/HomeDashboard';
 import CareerDashboard from './../components/career/CareerDashboard';
@@ -49,134 +49,132 @@ import Registration from './../crm/jsx/pages/Registration';
 import ForgotPassword from './../crm/jsx/pages/ForgotPassword';
 import Login from './../crm/jsx/pages/Login';
 import Home from './../crm/jsx/components/Dashboard/Home';
-import AppProfile from './../crm/jsx/components/AppsMenu/AppProfile/AppProfile';
-import Inbox from './../crm/jsx/components/AppsMenu/Email/Inbox/Inbox';
 
 import ReactChat from './../toolbox/chat-client/ReactChat';
 
 function Dashboard() {
-  const [isVisible, setIsVisible] = React.useState(false);
+    const [isVisible, setIsVisible] = React.useState(false);
 
-  const handleScroll = () => {
-    if ((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) && !chatAppView) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
+    const handleScroll = () => {
+        if ((document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) && !chatAppView) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    };
 
-  window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-  const [chatBoxView, setChatBoxView] = React.useState(true);
-  const [chatAppView, setChatAppView] = React.useState(false);
-  const [isVisibleChat, setIsVisibleChat] = React.useState(false);
+    const [chatBoxView, setChatBoxView] = React.useState(true);
+    const [chatAppView, setChatAppView] = React.useState(false);
+    const [isVisibleChat, setIsVisibleChat] = React.useState(false);
 
-  const handleBoxView = () => {
-    setChatBoxView(false);
-    setChatAppView(true);
-  };
+    const handleBoxView = () => {
+        setChatBoxView(false);
+        setChatAppView(true);
+    };
 
-  const handleAppView = () => {
-    setChatBoxView(true);
-    setChatAppView(false);
-  };
+    const handleAppView = () => {
+        setChatBoxView(true);
+        setChatAppView(false);
+    };
 
-  const homeProps = {
-    chatBoxView,
-    chatAppView,
-    isVisibleChat,
-    chatAppMethod: handleAppView,
-    chatBoxMethod: handleBoxView,
-    visibleChatMethod: setIsVisibleChat
-  };
+    const homeProps = {
+        chatBoxView,
+        chatAppView,
+        isVisibleChat,
+        chatAppMethod: handleAppView,
+        chatBoxMethod: handleBoxView,
+        visibleChatMethod: setIsVisibleChat
+    };
 
-  return (
-    <div>
-      <BackToTop showMe={isVisible} />
-      <Routes>
-        <Route path="/" element={<HomeDashboard homeProps={homeProps} />} />
-        <Route path="/contact" element={<ContactDashboard />} />
-        <Route path="/career" element={<CareerDashboard />} />
-        <Route path="/career/vacancies/:vacanciesId" element={<Vacantions />} />
+    return (
+        <div>
+            <BackToTop showMe={isVisible}/>
+            <Routes>
+                <Route path="/" element={<HomeDashboard homeProps={homeProps}/>}/>
+                <Route path="/contact" element={<ContactDashboard/>}/>
+                <Route path="/career" element={<CareerDashboard/>}/>
+                <Route path="/career/vacancies/:vacanciesId" element={<Vacantions/>}/>
 
-        {/* !FIKIRLER */}
-        <Route path="/ideas" element={<Articles />} />
-        <Route path="/ideas/startup" element={<ArticlesStartup />} />
-        <Route path="/ideas/alcohol" element={<ArticlesAlcohol />} />
-        <Route path="/ideas/logistics" element={<ArticlesLogistics />} />
-        <Route path="/ideas/finance" element={<ArticlesFinance />} />
+                {/* !FIKIRLER */}
+                <Route path="/ideas" element={<Articles/>}/>
+                <Route path="/ideas/startup" element={<ArticlesStartup/>}/>
+                <Route path="/ideas/alcohol" element={<ArticlesAlcohol/>}/>
+                <Route path="/ideas/logistics" element={<ArticlesLogistics/>}/>
+                <Route path="/ideas/finance" element={<ArticlesFinance/>}/>
 
-        {/* !HAQQIMIZDA */}
-        <Route path="/about" element={<About />} />
-        <Route path="/about/team" element={<AboutOurTeam />} />
-        <Route path="/about/testimonials" element={<AboutTestimonials />} />
-        <Route path="/about/partneers" element={<AboutPartneers />} />
+                {/* !HAQQIMIZDA */}
+                <Route path="/about" element={<About/>}/>
+                <Route path="/about/team" element={<AboutOurTeam/>}/>
+                <Route path="/about/testimonials" element={<AboutTestimonials/>}/>
+                <Route path="/about/partneers" element={<AboutPartneers/>}/>
 
-        {/* !XİDMƏTLƏR */}
-        <Route path="/services/marketing" element={<ServicesSalesAndMarketing />} />
-        <Route path="/services/companyable" element={<ServicesOrganization />} />
-        <Route path="/services/finance" element={<ServicesFinanceAndPayment />} />
-        <Route path="/services/investmentable" element={<ServicesInvestment />} />
-        <Route path="/services/businessazerbaijan" element={<ServicesDoingBusinessInAzerbaijan />} />
-        <Route path="/services/businessplan" element={<ServicesBusinessPlan />} />
-        <Route path="/services/marketresearch" element={<ServicesMarketResearch />} />
+                {/* !XİDMƏTLƏR */}
+                <Route path="/services/marketing" element={<ServicesSalesAndMarketing/>}/>
+                <Route path="/services/companyable" element={<ServicesOrganization/>}/>
+                <Route path="/services/finance" element={<ServicesFinanceAndPayment/>}/>
+                <Route path="/services/investmentable" element={<ServicesInvestment/>}/>
+                <Route path="/services/businessazerbaijan" element={<ServicesDoingBusinessInAzerbaijan/>}/>
+                <Route path="/services/businessplan" element={<ServicesBusinessPlan/>}/>
+                <Route path="/services/marketresearch" element={<ServicesMarketResearch/>}/>
 
-        {/* !SENAYE */}
-        <Route path="/industry/immovableproperty" element={<IndustryImmovableProperty />} />
-        <Route path="/industry/financialservice" element={<IndustryFinancialService />} />
-        <Route path="/industry/retail" element={<IndustryRetail />} />
-        <Route path="/industry/industryproducts" element={<IndustryProducts />} />
-        <Route path="/industry/techmediaandfun" element={<IndustryTechMediaAndFun />} />
-        <Route path="/industry/transportationandlogistics" element={<IndustryTransPortationAndLogistics />} />
-        <Route path="/industry/supplements" element={<IndustrySupplements />} />
-        <Route path="/industry/fmcg" element={<IndustryFMCG />} />
-        <Route path="/industry/architect" element={<IndustryArchitect />} />
-        <Route path="/industry/manufacture" element={<IndustryManufacture />} />
-        <Route path="/industry/education" element={<IndustryEducation />} />
-        <Route path="/industry/ecommerce" element={<IndustryEcommerce />} />
-        <Route path="/industry/energy" element={<IndustryEnergy />} />
-        <Route path="/chat" element={<ReactChat />} />
+                {/* !SENAYE */}
+                <Route path="/industry/immovableproperty" element={<IndustryImmovableProperty/>}/>
+                <Route path="/industry/financialservice" element={<IndustryFinancialService/>}/>
+                <Route path="/industry/retail" element={<IndustryRetail/>}/>
+                <Route path="/industry/industryproducts" element={<IndustryProducts/>}/>
+                <Route path="/industry/techmediaandfun" element={<IndustryTechMediaAndFun/>}/>
+                <Route path="/industry/transportationandlogistics" element={<IndustryTransPortationAndLogistics/>}/>
+                <Route path="/industry/supplements" element={<IndustrySupplements/>}/>
+                <Route path="/industry/fmcg" element={<IndustryFMCG/>}/>
+                <Route path="/industry/architect" element={<IndustryArchitect/>}/>
+                <Route path="/industry/manufacture" element={<IndustryManufacture/>}/>
+                <Route path="/industry/education" element={<IndustryEducation/>}/>
+                <Route path="/industry/ecommerce" element={<IndustryEcommerce/>}/>
+                <Route path="/industry/energy" element={<IndustryEnergy/>}/>
+                <Route path="/chat" element={<ReactChat/>}/>
 
-        {/* !FAQ PRIVACY LOGIN REGISTER */}
-        <Route path="/faq" element={<Faq />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route
-          path="/login"
-          element={
-            <ThemeContext>
-              <Login />
-            </ThemeContext>
-          }
-        />
-        <Route
-          path="/register"
-          element={
-            <ThemeContext>
-              <Registration />
-            </ThemeContext>
-          }
-        />
-        <Route
-          path="/forgotpassword"
-          element={
-            <ThemeContext>
-              <ForgotPassword />
-            </ThemeContext>
-          }
-        />
+                {/* !FAQ PRIVACY LOGIN REGISTER */}
+                <Route path="/faq" element={<Faq/>}/>
+                <Route path="/privacy" element={<Privacy/>}/>
+                <Route
+                    path="/login"
+                    element={
+                        <ThemeContext>
+                            <Login/>
+                        </ThemeContext>
+                    }
+                />
+                <Route
+                    path="/register"
+                    element={
+                        <ThemeContext>
+                            <Registration/>
+                        </ThemeContext>
+                    }
+                />
+                <Route
+                    path="/forgotpassword"
+                    element={
+                        <ThemeContext>
+                            <ForgotPassword/>
+                        </ThemeContext>
+                    }
+                />
 
-        {/* CRM CONTENT ROUTING */}
-        <Route
-          path="/crm-home-page"
-          element={
-            <ThemeContext>
-              <Home />
-            </ThemeContext>
-          }
-        />
-      </Routes>
-    </div>
-  );
+                {/* CRM CONTENT ROUTING */}
+                <Route
+                    path="/crm-home-page"
+                    element={
+                        <ThemeContext>
+                            <Home/>
+                        </ThemeContext>
+                    }
+                />
+            </Routes>
+        </div>
+    );
 }
 
 export default Dashboard;

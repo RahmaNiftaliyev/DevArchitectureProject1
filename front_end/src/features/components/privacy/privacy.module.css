@@ -20,9 +20,13 @@
     padding: 49px 146px 20px 49px
 }
 
-.privacy_container > h3 { color: #000 }
+.privacy_container > h3 {
+    color: #000
+}
 
-.privacy_container > p { color: #757575 }
+.privacy_container > p {
+    color: #757575
+}
 
 .privacy_container > h3,
 .privacy_container > p {
@@ -40,5 +44,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .privacy_container { padding: 49px 20px }
+    .privacy_container {
+        padding: 49px 20px
+    }
 }

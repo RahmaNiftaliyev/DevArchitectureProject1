@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Bar } from 'react-chartjs-2'
+import React, {Component} from 'react'
+import {Bar} from 'react-chartjs-2'
 
 class IncreaseChart extends Component {
     render() {
@@ -18,7 +18,7 @@ class IncreaseChart extends Component {
                 'Okt',
                 'Noy',
                 'Dek',
-				'Yan',
+                'Yan',
                 'Fev',
                 'Mar',
                 'Apr',
@@ -99,7 +99,7 @@ class IncreaseChart extends Component {
 
         return (
             <>
-                <Bar data={data} height={60} options={options} />
+                <Bar data={data} height={60} options={options}/>
             </>
         )
     }

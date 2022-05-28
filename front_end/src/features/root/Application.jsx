@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { Helmet } from "react-helmet";
+import React, {Component} from "react";
+import {Helmet} from "react-helmet";
 
 class Application extends Component {
-    render () {
+    render() {
         return (
             <div>
                 <Helmet>

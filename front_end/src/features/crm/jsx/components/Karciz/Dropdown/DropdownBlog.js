@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dropdown } from 'react-bootstrap'
+import {Dropdown} from 'react-bootstrap'
 
 const DropdownBlog = () => {
     return (
@@ -65,6 +65,7 @@ function DropdownBlogYear() {
         </Dropdown>
     )
 }
+
 function DropdownBlogYear2() {
     return (
         <Dropdown>
@@ -79,6 +80,7 @@ function DropdownBlogYear2() {
         </Dropdown>
     )
 }
+
 function DropdownBlogYear3() {
     return (
         <Dropdown className="ml-auto text-right">
@@ -112,5 +114,5 @@ function DropdownBlogYear3() {
     )
 }
 
-export { DropdownBlogYear, DropdownBlogYear2, DropdownBlogYear3 }
+export {DropdownBlogYear, DropdownBlogYear2, DropdownBlogYear3}
 export default DropdownBlog

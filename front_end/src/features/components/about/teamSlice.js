@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createSlice, createEntityAdapter, createAsyncThunk } from "@reduxjs/toolkit";
+import {createAsyncThunk, createEntityAdapter, createSlice} from "@reduxjs/toolkit";
 
 const EmployeeAdapter = createEntityAdapter({
     selectId: (Employee) => Employee.id,
@@ -169,6 +169,6 @@ export const {
     selectTotal: selectTotalEmployees
 } = EmployeeAdapter.getSelectors((state) => state.Employees);
 
-export const { setChecked, setSelectedEmployee, setStatus } = EmployeesSlice.actions;
+export const {setChecked, setSelectedEmployee, setStatus} = EmployeesSlice.actions;
 
 export default EmployeesSlice.reducer;

@@ -22,11 +22,11 @@
     margin-bottom: 1.75rem
 }
 
-.services_describtion>p {
+.services_describtion > p {
     text-align: justify;
 }
 
-.services_describtion>p {
+.services_describtion > p {
     font-size: 21px;
     font-weight: 400;
     line-height: 30px
@@ -41,7 +41,7 @@
     text-align: center;
 }
 
-.services_list_container div>a>span {
+.services_list_container div > a > span {
     -moz-transition: .8s ease-in !important;
     -ms-transition: .8s ease-in !important;
     -o-transition: .8s ease-in !important;
@@ -107,7 +107,7 @@
     margin-top: 162px
 }
 
-.our_team>p {
+.our_team > p {
     font-size: 11px;
     font-weight: 400;
     letter-spacing: 3.8499999046325684px;
@@ -115,7 +115,7 @@
     text-align: center
 }
 
-.our_team>h2 {
+.our_team > h2 {
     font-size: 42px;
     font-style: normal;
     font-weight: 400;
@@ -138,13 +138,13 @@
     margin-top: 8rem
 }
 
-.team_card>img {
+.team_card > img {
     max-width: 100%
 }
 
 
 .article_header_title_date_color {
-    color:#8CB1F3!important;
+    color: #8CB1F3 !important;
 }
 
 .team_card {
@@ -152,28 +152,28 @@
     width: 319px;
 }
 
-.team_card>ul {
+.team_card > ul {
     display: flex;
     margin-top: 2.6875rem
 }
 
-.team_card>ul>li {
+.team_card > ul > li {
     margin-right: 1.25rem
 }
 
-.team_card>ul>li>a {
+.team_card > ul > li > a {
     color: #2b2b2b;
     text-decoration: none;
 }
 
-.team_card>h3 {
+.team_card > h3 {
     font-size: 1.6875rem;
     font-weight: 400;
     margin-bottom: 1rem;
     margin-top: 2.3125rem;
 }
 
-.team_card>p {
+.team_card > p {
     color: #878787;
     font-size: .9375rem;
     font-weight: 400;
@@ -185,7 +185,7 @@
     justify-content: center
 }
 
-.slide_dot>div {
+.slide_dot > div {
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
@@ -202,7 +202,7 @@
     margin-top: 183px
 }
 
-.text_sec>p:first-child {
+.text_sec > p:first-child {
     color: #171717;
     font-size: clamp(1.25rem, 2.5vw, 2.5rem);
     font-style: normal;
@@ -211,7 +211,7 @@
     text-align: center;
 }
 
-.text_sec>p:nth-child(2) {
+.text_sec > p:nth-child(2) {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -244,12 +244,12 @@
     width: 488px;
 }
 
-.doing_business_box>p:first-child {
+.doing_business_box > p:first-child {
     color: #b9b9b9;
     text-align: end;
 }
 
-.doing_business_box>p:nth-child(2) {
+.doing_business_box > p:nth-child(2) {
     color: #fff;
     margin-bottom: 48px;
     text-align: end;
@@ -257,7 +257,7 @@
 
 .doing_business_button {
     margin-left: 379px;
-    border:1px solid transparent!important;
+    border: 1px solid transparent !important;
 }
 
 .carier {
@@ -265,7 +265,7 @@
     margin-top: 162px
 }
 
-.carier>img {
+.carier > img {
     width: 50%
 }
 
@@ -350,7 +350,7 @@
     padding: 20px
 }
 
-.articles_card1_body>h1 {
+.articles_card1_body > h1 {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -359,7 +359,7 @@
     text-align: left
 }
 
-.articles_card1_body>h2 {
+.articles_card1_body > h2 {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -369,7 +369,7 @@
     text-align: left;
 }
 
-.articles_card1_body>p:first-child {
+.articles_card1_body > p:first-child {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -378,12 +378,12 @@
     text-align: left
 }
 
-.articles_card1>img {
+.articles_card1 > img {
     margin-bottom: 20px;
     max-width: 100%;
 }
 
-.articles_card1_body>p:nth-child(2) {
+.articles_card1_body > p:nth-child(2) {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -417,7 +417,7 @@
     margin-bottom: 20px;
 }
 
-.articles_card2_body>h2 {
+.articles_card2_body > h2 {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -426,7 +426,7 @@
     text-align: left
 }
 
-.articles_card2_body>p:nth-child(2) {
+.articles_card2_body > p:nth-child(2) {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -441,8 +441,8 @@
     padding: 20px
 }
 
-.articles_card2_body>p:nth-child(3),
-.articles_card1>p {
+.articles_card2_body > p:nth-child(3),
+.articles_card1 > p {
     color: #2b2B2B;
     font-size: 18px;
     font-style: normal;
@@ -452,13 +452,13 @@
     text-align: left;
 }
 
-.articles_card1>p {
+.articles_card1 > p {
     bottom: 20px;
     left: 20px;
     position: absolute;
 }
 
-.articles_card2>img {
+.articles_card2 > img {
     max-width: 50%
 }
 
@@ -466,7 +466,7 @@
     padding-top: 162px
 }
 
-.client_projects>h2 {
+.client_projects > h2 {
     font-size: 42px;
     font-style: normal;
     font-weight: 400;
@@ -475,7 +475,7 @@
     text-align: center
 }
 
-.client_projects>p {
+.client_projects > p {
     font-size: 11px;
     font-style: normal;
     font-weight: 400;
@@ -501,7 +501,7 @@
     width: 378px;
 }
 
-.span_img_container>img {
+.span_img_container > img {
     max-width: 50%
 }
 
@@ -525,7 +525,7 @@
         width: 100%;
     }
 
-    .carier>img {
+    .carier > img {
         margin: 0;
         object-fit: cover;
         width: 100%;
@@ -580,7 +580,7 @@
         margin-top: 81px;
     }
 
-    .text_sec>p:first-child {
+    .text_sec > p:first-child {
         line-height: 26px;
     }
 
@@ -588,7 +588,7 @@
         display: none
     }
 
-    .articles_card2>img {
+    .articles_card2 > img {
         max-width: 100%
     }
 
@@ -605,12 +605,12 @@
         width: 100%;
     }
 
-    .services>div {
+    .services > div {
         padding: 0;
         width: 100%;
     }
 
-    .services_describtion>h2 {
+    .services_describtion > h2 {
         font-size: 36px;
         font-weight: 400;
         line-height: 40px;
@@ -662,14 +662,14 @@
         flex-direction: column;
     }
 
-    .projects_container>span {
+    .projects_container > span {
         display: inline-block;
         display: flex;
         justify-content: center;
         margin: 20px 0;
     }
 
-    .services_list_container>div span {
+    .services_list_container > div span {
         margin-right: 10px !important;
     }
 
@@ -731,7 +731,6 @@
         justify-content: space-between
     }
 }
-
 
 
 .business_item {

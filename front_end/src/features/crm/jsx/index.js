@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 /// React router dom
-import { Routes, Route } from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 /// Css
 import './index.css'
 import './chart.css'
@@ -112,98 +112,98 @@ const Markup = () => {
 
     const routes = [
         /// Dashboard
-        { url: '', component: Home },
-        { url: 'dashboard', component: Home },
-        { url: 'event-list', component: EventList },
-        { url: 'event', component: EventPage },
-        { url: 'analytics', component: Analytics },
-        { url: 'reviews', component: Reviews },
-        { url: 'customers', component: Customers },
-        { url: 'task', component: Task },
+        {url: '', component: Home},
+        {url: 'dashboard', component: Home},
+        {url: 'event-list', component: EventList},
+        {url: 'event', component: EventPage},
+        {url: 'analytics', component: Analytics},
+        {url: 'reviews', component: Reviews},
+        {url: 'customers', component: Customers},
+        {url: 'task', component: Task},
 
         /// Apps
-        { url: 'app-profile', component: AppProfile },
-        { url: 'post-details', component: PostDetails },
-        { url: 'email-compose', component: Compose },
-        { url: 'email-inbox', component: Inbox },
-        { url: 'email-read', component: Read },
-        { url: 'app-calender', component: Calendar },
+        {url: 'app-profile', component: AppProfile},
+        {url: 'post-details', component: PostDetails},
+        {url: 'email-compose', component: Compose},
+        {url: 'email-inbox', component: Inbox},
+        {url: 'email-read', component: Read},
+        {url: 'app-calender', component: Calendar},
 
         /// Chart
-        { url: 'chart-sparkline', component: SparklineChart },
-        { url: 'chart-chartjs', component: ChartJs },
-        { url: 'chart-chartist', component: Chartist },
-        { url: 'chart-apexchart', component: ApexChart },
-        { url: 'chart-rechart', component: RechartJs },
+        {url: 'chart-sparkline', component: SparklineChart},
+        {url: 'chart-chartjs', component: ChartJs},
+        {url: 'chart-chartist', component: Chartist},
+        {url: 'chart-apexchart', component: ApexChart},
+        {url: 'chart-rechart', component: RechartJs},
 
         /// Bootstrap
-        { url: 'ui-alert', component: UiAlert },
-        { url: 'ui-badge', component: UiBadge },
-        { url: 'ui-button', component: UiButton },
-        { url: 'ui-modal', component: UiModal },
-        { url: 'ui-button-group', component: UiButtonGroup },
-        { url: 'ui-accordion', component: UiAccordion },
-        { url: 'ui-list-group', component: UiListGroup },
-        { url: 'ui-media-object', component: UiMediaObject },
-        { url: 'ui-card', component: UiCards },
-        { url: 'ui-carousel', component: UiCarousel },
-        { url: 'ui-dropdown', component: UiDropDown },
-        { url: 'ui-popover', component: UiPopOver },
-        { url: 'ui-progressbar', component: UiProgressBar },
-        { url: 'ui-tab', component: UiTab },
-        { url: 'ui-pagination', component: UiPagination },
-        { url: 'ui-typography', component: UiTypography },
-        { url: 'ui-grid', component: UiGrid },
+        {url: 'ui-alert', component: UiAlert},
+        {url: 'ui-badge', component: UiBadge},
+        {url: 'ui-button', component: UiButton},
+        {url: 'ui-modal', component: UiModal},
+        {url: 'ui-button-group', component: UiButtonGroup},
+        {url: 'ui-accordion', component: UiAccordion},
+        {url: 'ui-list-group', component: UiListGroup},
+        {url: 'ui-media-object', component: UiMediaObject},
+        {url: 'ui-card', component: UiCards},
+        {url: 'ui-carousel', component: UiCarousel},
+        {url: 'ui-dropdown', component: UiDropDown},
+        {url: 'ui-popover', component: UiPopOver},
+        {url: 'ui-progressbar', component: UiProgressBar},
+        {url: 'ui-tab', component: UiTab},
+        {url: 'ui-pagination', component: UiPagination},
+        {url: 'ui-typography', component: UiTypography},
+        {url: 'ui-grid', component: UiGrid},
 
         /// Plugin
-        { url: 'uc-select2', component: Select2 },
-        { url: 'uc-nestable', component: Nestable },
-        { url: 'uc-noui-slider', component: MainNouiSlider },
-        { url: 'uc-sweetalert', component: MainSweetAlert },
-        { url: 'uc-toastr', component: Toastr },
-        { url: 'map-jqvmap', component: JqvMap },
-        { url: 'uc-lightgallery', component: Lightgallery },
+        {url: 'uc-select2', component: Select2},
+        {url: 'uc-nestable', component: Nestable},
+        {url: 'uc-noui-slider', component: MainNouiSlider},
+        {url: 'uc-sweetalert', component: MainSweetAlert},
+        {url: 'uc-toastr', component: Toastr},
+        {url: 'map-jqvmap', component: JqvMap},
+        {url: 'uc-lightgallery', component: Lightgallery},
 
         /// Widget
-        { url: 'widget-basic', component: Widget },
+        {url: 'widget-basic', component: Widget},
 
         /// Shop
-        { url: 'ecom-product-grid', component: ProductGrid },
-        { url: 'ecom-product-list', component: ProductList },
-        { url: 'ecom-product-detail', component: ProductDetail },
-        { url: 'ecom-product-order', component: ProductOrder },
-        { url: 'ecom-checkout', component: Checkout },
-        { url: 'ecom-invoice', component: Invoice },
-        { url: 'ecom-product-detail', component: ProductDetail },
-        { url: 'ecom-customers', component: EcomCustomers },
+        {url: 'ecom-product-grid', component: ProductGrid},
+        {url: 'ecom-product-list', component: ProductList},
+        {url: 'ecom-product-detail', component: ProductDetail},
+        {url: 'ecom-product-order', component: ProductOrder},
+        {url: 'ecom-checkout', component: Checkout},
+        {url: 'ecom-invoice', component: Invoice},
+        {url: 'ecom-product-detail', component: ProductDetail},
+        {url: 'ecom-customers', component: EcomCustomers},
 
         /// Form
 
-        { url: 'form-redux', component: ReduxForm },
-        { url: 'form-redux-wizard', component: WizardForm },
-        { url: 'form-element', component: Element },
-        { url: 'form-wizard', component: Wizard },
-        { url: 'form-wizard', component: Wizard },
-        { url: 'form-editor-summernote', component: SummerNote },
-        { url: 'form-pickers', component: Pickers },
-        { url: 'form-validation-jquery', component: jQueryValidation },
+        {url: 'form-redux', component: ReduxForm},
+        {url: 'form-redux-wizard', component: WizardForm},
+        {url: 'form-element', component: Element},
+        {url: 'form-wizard', component: Wizard},
+        {url: 'form-wizard', component: Wizard},
+        {url: 'form-editor-summernote', component: SummerNote},
+        {url: 'form-pickers', component: Pickers},
+        {url: 'form-validation-jquery', component: jQueryValidation},
 
         /// table
-        { url: 'table-datatable-basic', component: DataTable },
-        { url: 'table-bootstrap-basic', component: BootstrapTable },
-        { url: 'table-filtering', component: FilteringTable },
-        { url: 'table-sorting', component: SortingTable },
+        {url: 'table-datatable-basic', component: DataTable},
+        {url: 'table-bootstrap-basic', component: BootstrapTable},
+        {url: 'table-filtering', component: FilteringTable},
+        {url: 'table-sorting', component: SortingTable},
 
         /// pages
-        { url: 'page-register', component: Registration },
-        { url: 'page-lock-screen', component: LockScreen },
-        { url: 'page-login', component: Login },
-        { url: 'page-error-400', component: Error400 },
-        { url: 'page-error-403', component: Error403 },
-        { url: 'page-error-404', component: Error404 },
-        { url: 'page-error-500', component: Error500 },
-        { url: 'page-error-503', component: Error503 },
-        { url: 'todo', component: Todo },
+        {url: 'page-register', component: Registration},
+        {url: 'page-lock-screen', component: LockScreen},
+        {url: 'page-login', component: Login},
+        {url: 'page-error-400', component: Error400},
+        {url: 'page-error-403', component: Error403},
+        {url: 'page-error-404', component: Error404},
+        {url: 'page-error-500', component: Error500},
+        {url: 'page-error-503', component: Error503},
+        {url: 'todo', component: Todo},
     ]
 
     return (
@@ -227,7 +227,7 @@ const Markup = () => {
                 >
                     <div
                         className={`${!pagePath ? 'container-fluid' : ''}`}
-                        style={{ minHeight: window.screen.height - 60 }}
+                        style={{minHeight: window.screen.height - 60}}
                     >
                         <Routes>
                             {routes.map((data, i) => (
@@ -241,7 +241,7 @@ const Markup = () => {
                         </Routes>
                     </div>
                 </div>
-                {!pagePath && <Footer />}
+                {!pagePath && <Footer/>}
             </div>
             {ScrollToTop}
         </>
