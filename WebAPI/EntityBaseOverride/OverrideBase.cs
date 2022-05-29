@@ -11,9 +11,9 @@ namespace WebAPI.EntityBaseOverride
     /// </summary>
     public class OverrideBase : CSharpEntityTypeGenerator
     {
-        
+
 #pragma warning disable CS1572 // XML comment has a param tag for 'cSharpHelper', but there is no parameter by that name
-/// <summary>
+        /// <summary>
         ///
         /// </summary>
         /// <param name="annotationCodeGenerator"></param>

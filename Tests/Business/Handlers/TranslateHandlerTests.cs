@@ -21,20 +21,21 @@ using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
 
+using static Business.Handlers.Translates.Commands.CreateTranslateCommand;
+using static Business.Handlers.Translates.Commands.DeleteTranslateCommand;
+using static Business.Handlers.Translates.Commands.UpdateTranslateCommand;
+using static Business.Handlers.Translates.Queries.GetTranslateQuery;
+using static Business.Handlers.Translates.Queries.GetTranslatesQuery;
+
 #pragma warning disable CS0246 // The type or namespace name 'CreateTranslateCommand' could not be found (are you missing a using directive or an assembly reference?)
-using static CreateTranslateCommand;
 #pragma warning restore CS0246 // The type or namespace name 'CreateTranslateCommand' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'DeleteTranslateCommand' could not be found (are you missing a using directive or an assembly reference?)
-using static DeleteTranslateCommand;
 #pragma warning restore CS0246 // The type or namespace name 'DeleteTranslateCommand' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'GetTranslateQuery' could not be found (are you missing a using directive or an assembly reference?)
-using static GetTranslateQuery;
 #pragma warning restore CS0246 // The type or namespace name 'GetTranslateQuery' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'GetTranslatesQuery' could not be found (are you missing a using directive or an assembly reference?)
-using static GetTranslatesQuery;
 #pragma warning restore CS0246 // The type or namespace name 'GetTranslatesQuery' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'UpdateTranslateCommand' could not be found (are you missing a using directive or an assembly reference?)
-using static UpdateTranslateCommand;
 #pragma warning restore CS0246 // The type or namespace name 'UpdateTranslateCommand' could not be found (are you missing a using directive or an assembly reference?)
 
 namespace Tests.Business.Handlers

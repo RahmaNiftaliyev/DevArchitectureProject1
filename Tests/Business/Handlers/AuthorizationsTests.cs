@@ -27,16 +27,16 @@ using System.Threading.Tasks;
 using Tests.Helpers;
 
 #pragma warning disable CS0246 // The type or namespace name 'ForgotPasswordCommand' could not be found (are you missing a using directive or an assembly reference?)
-using static ForgotPasswordCommand;
+using static Business.Handlers.Authorizations.Commands.ForgotPasswordCommand;
 #pragma warning restore CS0246 // The type or namespace name 'ForgotPasswordCommand' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'LoginUserQuery' could not be found (are you missing a using directive or an assembly reference?)
-using static LoginUserQuery;
+using static Business.Handlers.Authorizations.Queries.LoginUserQuery;
 #pragma warning restore CS0246 // The type or namespace name 'LoginUserQuery' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'LoginWithRefreshTokenQuery' could not be found (are you missing a using directive or an assembly reference?)
-using static LoginWithRefreshTokenQuery;
+using static Business.Handlers.Authorizations.Queries.LoginWithRefreshTokenQuery;
 #pragma warning restore CS0246 // The type or namespace name 'LoginWithRefreshTokenQuery' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'RegisterUserCommand' could not be found (are you missing a using directive or an assembly reference?)
-using static RegisterUserCommand;
+using static Business.Handlers.Authorizations.Commands.RegisterUserCommand;
 #pragma warning restore CS0246 // The type or namespace name 'RegisterUserCommand' could not be found (are you missing a using directive or an assembly reference?)
 
 namespace Tests.Business.Handlers

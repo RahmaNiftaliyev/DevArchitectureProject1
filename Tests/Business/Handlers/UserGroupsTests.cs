@@ -18,16 +18,12 @@ using System.Threading;
 using System.Threading.Tasks;
 
 #pragma warning disable CS0246 // The type or namespace name 'CreateUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
-using static CreateUserGroupCommand;
 #pragma warning restore CS0246 // The type or namespace name 'CreateUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'DeleteUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
-using static DeleteUserGroupCommand;
 #pragma warning restore CS0246 // The type or namespace name 'DeleteUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'GetUserGroupsQuery' could not be found (are you missing a using directive or an assembly reference?)
-using static GetUserGroupsQuery;
 #pragma warning restore CS0246 // The type or namespace name 'GetUserGroupsQuery' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'UpdateUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
-using static UpdateUserGroupCommand;
 #pragma warning restore CS0246 // The type or namespace name 'UpdateUserGroupCommand' could not be found (are you missing a using directive or an assembly reference?)
 
 namespace Tests.Business.Handlers

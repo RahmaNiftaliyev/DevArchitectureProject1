@@ -22,19 +22,19 @@ using System.Threading;
 using System.Threading.Tasks;
 
 #pragma warning disable CS0246 // The type or namespace name 'CreateLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
-using static CreateLanguageCommand;
+using static Business.Handlers.Languages.Commands.CreateLanguageCommand;
 #pragma warning restore CS0246 // The type or namespace name 'CreateLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'DeleteLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
-using static DeleteLanguageCommand;
+using static Business.Handlers.Languages.Commands.DeleteLanguageCommand;
 #pragma warning restore CS0246 // The type or namespace name 'DeleteLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'GetLanguageQuery' could not be found (are you missing a using directive or an assembly reference?)
-using static GetLanguageQuery;
+using static Business.Handlers.Languages.Queries.GetLanguageQuery;
 #pragma warning restore CS0246 // The type or namespace name 'GetLanguageQuery' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'GetLanguagesQuery' could not be found (are you missing a using directive or an assembly reference?)
-using static GetLanguagesQuery;
+using static Business.Handlers.Languages.Queries.GetLanguagesQuery;
 #pragma warning restore CS0246 // The type or namespace name 'GetLanguagesQuery' could not be found (are you missing a using directive or an assembly reference?)
 #pragma warning disable CS0246 // The type or namespace name 'UpdateLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
-using static UpdateLanguageCommand;
+using static Business.Handlers.Languages.Commands.UpdateLanguageCommand;
 #pragma warning restore CS0246 // The type or namespace name 'UpdateLanguageCommand' could not be found (are you missing a using directive or an assembly reference?)
 
 namespace Tests.Business.Handlers

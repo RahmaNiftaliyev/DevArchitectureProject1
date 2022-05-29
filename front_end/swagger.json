@@ -1,14 +1,14 @@
 ﻿{
-  "swagger": "2.0",
+  "host": "www",
   "info": {
     "title": "Title",
     "description": "Title",
     "version": "1.0.0"
   },
-  "host": "www",
+  "paths": {
+  },
   "schemes": [
     "https"
   ],
-  "paths": {
-  }
+  "swagger": "2.0"
 }

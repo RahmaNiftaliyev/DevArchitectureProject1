@@ -94,6 +94,7 @@ namespace WebAPI
             services.AddTransient<MsSqlLogger>();
 
             base.ConfigureServices(services);
+            services.AddApplicationInsightsTelemetry();
         }
 
 
