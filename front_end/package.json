@@ -65,7 +65,7 @@
     "mdbreact": "^5.2.0",
     "merge": "^2.1.1",
     "metismenujs": "^1.2.1",
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.20",
     "nouislider-react": "^3.3.9",
     "oidc-client": "^1.11.5",
     "p-min-delay": "^3.1.0",
