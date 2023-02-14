@@ -72,7 +72,7 @@
     "peerjs": "^1.4.6",
     "rc-color-picker": "^1.2.6",
     "react": "^18.1.0",
-    "react-admin": "^4.1.0",
+    "react-admin": "^4.7.6",
     "react-alice-carousel": "^2.6.1",
     "react-animated-cursor": "^2.5.1",
     "react-animation-on-scroll": "^5.1.0",
