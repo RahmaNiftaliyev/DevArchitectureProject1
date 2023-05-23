@@ -138,7 +138,7 @@
     "simple-peer": "^9.9.3",
     "simple-react-lightbox": "^3.5.4",
     "slick-carousel": "^1.8.1",
-    "socket.io-client": "^3.1.1",
+    "socket.io-client": "^4.6.1",
     "source-map-loader": "^3.0.1",
     "styled-components": "^5.3.5",
     "sweetalert": "^2.1.2",
