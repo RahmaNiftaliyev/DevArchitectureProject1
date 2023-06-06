@@ -143,7 +143,7 @@
     "sweetalert2": "^11.4.17",
     "typewriting-react": "^1.0.8",
     "use-file-upload": "^1.0.11",
-    "vite": "^2.9.13",
+    "vite": "^2.9.16",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
